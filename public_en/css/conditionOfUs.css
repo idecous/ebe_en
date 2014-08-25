@@ -1,0 +1,95 @@
+.subNavbar{
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+}
+.subNavbar span{
+	color: #939598;
+}
+.conditionBlock{
+	width: 91.5%;
+	margin: 35px auto 0 auto;
+	visibility: hidden;
+}
+.conditionBlock li{
+	margin-bottom: 14px;
+	overflow: hidden;
+	position: relative;
+}
+.conditionBlock li .subTitleRow {
+	line-height: 22px;
+	font-size: 22px;
+	cursor: pointer;
+}
+.conditionBlock li .subTitleRow i{
+	position:absolute;
+	top:0;
+	left:0;
+	display: block;
+	width: 16px;
+	height: 22px;
+	background: url(../images/icons.png) no-repeat -145px 0;
+	overflow: hidden;
+}
+.conditionBlock li .subTitleRow .open{
+	background-position: -149px -22px;
+}
+.conditionBlock li .subTitleRow span{
+	float: left;
+	margin-left: 22px;
+	line-height: 22px;
+	overflow: hidden;
+}
+.conditionBlock li .topSeparator{
+	height: 3px;
+	background-color: #000;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.conditionBlock li p{
+	padding: 0 10px;
+	margin-top: 24px;
+	margin-bottom: 25px;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: justify;
+}
+.conditionBlock li .bottomSeparator{
+	height: 1px;
+	background-color: #000;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.infoBlock{
+	width: 91.5%;
+	margin: 50px auto 0 auto;
+	visibility: hidden;
+	font-size: 14px;
+}
+.infoBlock p{
+	padding: 0 10px;
+}
+.infoBlock li{
+	line-height: 30px;
+}
+.infoBlock li .label{
+	width: 28.4%;
+	float: left;
+}
+.infoBlock li .text{
+	float: left;
+	width: 71.6%;
+	
+}
+.bottomSpace{
+	clear: both;
+	height: 60px;
+}
+.bSpacer{
+	clear:both;
+	height: 70px;
+}

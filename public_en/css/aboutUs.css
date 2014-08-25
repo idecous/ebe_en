@@ -1,0 +1,30 @@
+.subNavbar{
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+}
+.subNavbar span{
+	color: #939598;
+}
+.aboutBlock{
+	width: 92%;
+	margin: 26px auto 0 auto;
+}
+.aboutBlock h1{
+	font-size: 30px;
+	line-height: 60px;
+}
+.aboutBlock .separator{
+	overflow: hidden;
+	height:1px;
+	background-color: #000;
+}
+.aboutBlock p{
+	margin-top:30px;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+}
+.bSpacer{
+	height: 70px;
+}

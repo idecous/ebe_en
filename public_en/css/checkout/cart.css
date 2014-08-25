@@ -1,0 +1,402 @@
+.m7p_bSpacer{
+	height: 40px;
+}
+.titlePanel{
+	position: relative;
+}
+.titlePanel .m7p_pageTitle{
+	padding-top:15px;
+	padding-bottom: 20px;
+}
+.titlePanel .buttonGroup{
+	position: absolute;
+	top: 0;right: 0;
+}
+.titlePanel .buttonGroup a:first-child{
+	margin-right: 10px;
+}
+.cartTable{
+	width: 100%;
+	margin-top: 20px;
+}
+.cartTable th.firsts {
+    padding: 0 0 10px;
+}
+.cartTable th.lasts {
+    padding: 0 0 10px 20px;
+}
+.cartTable th {
+    font-size: 12px;
+    padding: 0 20px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.cartTable  .productImage{
+	display: inline-block;
+	margin: 15px 0 0 10px;
+	width: 100px;
+}
+.cartTable th, .cartTable td{
+	text-align: left;
+	vertical-align: middle;
+}
+.cartTable td{
+	padding: 10px 20px;
+	
+}
+.cartTable tbody tr{
+	padding: 0 0 15px;
+	background: url("../../images/gray.jpg") repeat-x scroll 0 top ;
+}
+.cartTable tfoot tr{
+	background: url("../../images/gray.jpg") repeat-x scroll 0 top ;
+}
+
+.cartTable td.firsts{
+    padding: 0 0 10px;
+}
+.cartTable .textCenter{
+	text-align: center;
+}
+.cartTable .textRight{
+	text-align: right;
+}
+.cartTable .productName{
+	font-size: 16px;
+	font-weight: bold;
+}
+.cartTable .itemOptions{
+	margin-top: 10px;
+}
+.cartTable .itemOptions .label {
+	margin-right: 10px;
+}
+
+.cartTable .inputText{
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #bebebc;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    padding: 0 4px;
+}
+.cartTable .inputText.qty {
+	width: 42px;
+}
+.cartTable .linkWishlist{
+	display:inline-block;
+	background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    padding: 0 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.cartTable .linkWishlist:hover{
+	background-color: #000;
+	color: #fff;
+}
+.cartTable .btnRemove{
+	display:inline-block;
+	width: 14px;
+	height: 13px;
+	background: url("../../images/btn_trash.gif");
+}
+
+.cartTable tfoot td{
+	padding: 20px 0;
+}
+.cartTable .discount {
+	position: relative;
+}
+.cartTable .discount label{
+	float:left;
+	font-size: 15px;
+	margin: 10px 0 0;
+	font-weight: bold;
+}
+.cartTable .discount .discountForm{
+	float:left;
+	margin-left: 10px;
+}
+.cartTable .discount .discountForm .inputText{
+	width: 200px;
+	text-align: left;
+	float: left;
+}
+.cartTable .discount .discountForm .inputText input{
+	width: 100%;
+	border: none;
+}
+
+.cartTable .discount .discountForm .m7p_button{
+	margin-left: 10px;
+}
+.cartTable tfoot .update{
+	float: right;
+}
+
+.cartCollaterals{
+	padding-top: 40px;
+}
+.cartCollaterals .addressGroup{
+	border: 1px solid #cbcbcb;
+    float: left;
+    padding: 20px;
+    width: 52%;
+}
+.cartCollaterals .addressGroup h2{
+	font-size: 22px;
+	padding-bottom: 10px;
+}
+.cartCollaterals .addressGroup li{
+	border-top: 1px solid #cacaca;
+	padding: 15px 0;
+	clear: both;
+}
+.cartCollaterals .addressGroup label{
+	float: left;
+	width: 50%;
+	padding-top: 10px;
+}
+.cartCollaterals .addressGroup .m7p_inputBox{
+	float:left; 
+	width: 50%;
+	
+}
+.cartCollaterals .addressGroup li:last-child{
+	border-top:none;
+}
+
+.cartCollaterals .addressGroup li:last-child input{
+	float: right;
+}
+
+.cartCollaterals .totals{
+	float: right;
+	width: 40%;
+}
+.cartCollaterals .totals .label{
+	display: inline-block;
+	
+}
+.cartCollaterals .totals .number{
+	display: inline-block;
+	width: 80px;
+}
+
+.cartCollaterals .totals .numberBlock{
+	border: 1px solid #cbcbcb;
+	margin: 0 0 30px;
+	padding: 15px;
+	text-align: right;
+}
+.cartCollaterals .totals .subtotalRow{
+	line-height: 40px;
+}
+.cartCollaterals .totals .grandTotal{
+	line-height: 44px;
+	font-weight: bold;
+	text-align: left;
+	font-size: 16px;
+	text-align: right;
+}
+.cartCollaterals .totals .separator{
+	border-top: 1px solid #cbcbcb;
+}
+
+.cartCollaterals .totals .operationBlock{
+	white-space: nowrap;
+}
+.cartCollaterals .totals .operationBlock .m7p_button{
+	padding: 0;
+	width: 48%;
+	overflow: hidden;
+}
+.cartCollaterals .totals .operationBlock .m7p_button:last-child{
+	float: right;	
+}
+.cartCollaterals .totals .operationBlock .m7p_button:first-child{
+	float: left;
+}
+
+.phoneTable{
+	display:none;
+	padding: 10px 0;
+}
+.phoneTable li{
+	position: relative;	
+	height: 170px;
+	margin-top: 20px;
+	padding-bottom:20px;
+	border-bottom: 1px solid #ccc;
+}
+.phoneTable li:last-child{
+	border-bottom:none;
+}
+.phoneTable li .firstBlock{
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 100px;
+}
+.phoneTable li .firstBlock .productImage{
+	display: block;
+	width: 100px;
+}
+.phoneTable li .firstBlock .productImage img{
+	width: 100%;
+}
+.phoneTable li .firstBlock .m7p_button{
+	font-size: 11px;
+	padding: 0;
+	text-align: center;
+	border-width: 1px; 
+	line-height: 14px;
+	height: 14px;
+	margin-top: 4px;
+	width: 98px;
+}
+.phoneTable li .contentBlock{
+	position:relative;
+	margin-left: 140px;
+	height: 170px;
+}
+.phoneTable li .contentBlock .productName{
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+.phoneTable li .contentBlock .itemOptions{
+	line-height: 20px;
+	padding: 10px 0;
+}
+.phoneTable li .contentBlock .itemOptions .label{
+	margin-right: 10px;
+}
+.phoneTable li .contentBlock .inputText{
+	line-height: 22px;
+	border: 1px solid #bebebc;
+	text-align: center;
+}
+.phoneTable li .contentBlock .price{
+	margin-top: 10px;
+	line-height: 24px;
+}
+.phoneTable li .contentBlock .price .label{
+	margin-right: 10px;
+}
+
+.phoneTable li .contentBlock .btnRemove{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	display:block;
+	width: 14px;
+	height: 13px;
+	background: url("../../images/btn_trash.gif");	
+}
+
+@media only screen and (max-width: 784px) {
+	.m7p_tSpacer{
+		height: 0;
+	}
+	.titlePanel .m7p_pageTitle {
+		padding: 0;
+		padding-bottom: 10px;
+	}
+	.phoneTable{
+		display: block;
+	}
+	.titlePanel .m7p_pageTitle{
+		padding-left: 10px;
+		font-size: 18px;
+	}
+	.titlePanel .buttonGroup {
+		display: none;
+	}
+	.cartTable{
+		margin-top: 0;
+	}
+	.cartTable thead{
+		display: none;
+	}
+	.cartTable tbody{
+		display: none;
+	}
+	.cartTable tfoot td {
+		padding: 10px;
+	}
+	.cartTable tfoot .update{
+		float: none;
+	}
+	.cartTable .discount {
+		position: static;
+	}
+	.cartTable .discount label{
+		float:none;
+		display:block;
+		width: auto;
+		margin: 0;
+		margin: 20px 0 4px 0;
+	}
+	.cartTable .discount .discountForm{
+		float: none;
+		margin: 0;
+	}
+	.cartTable .discount .discountForm .inputText{
+		width: auto;
+		float: none;
+	}
+	.cartTable .discount .discountForm .m7p_button {
+	    margin-left: 0;
+	}
+	.cartTable .discount .discountForm .m7p_button {
+		margin-top: 10px;
+	}
+	.cartCollaterals .addressGroup label{
+		width: 100%;
+		float: none;
+	}
+	.cartCollaterals .addressGroup .m7p_inputBox{
+		width: auto;
+		float: none;
+	}
+	.cartCollaterals .addressGroup li:last-child{
+		padding: 0;
+	}
+	.cartCollaterals .addressGroup{
+		float: none;
+		width: auto;
+		margin: 0 10px;
+	}
+	.cartCollaterals .addressGroup li:last-child input {
+		float: none;
+	}
+	
+	.cartCollaterals .totals{
+		float: none;
+		width: auto;
+		margin: 40px 10px;
+	}
+	.cartCollaterals .totals .operationBlock{
+		white-space: normal;
+	}
+	.cartCollaterals .totals .operationBlock .m7p_button{
+		width: 100%;
+	}
+	.cartCollaterals .totals .operationBlock .m7p_button:first-child {
+		float: none;	
+	}
+	.cartCollaterals .totals .operationBlock .m7p_button:last-child {
+		float: none;	
+		margin-top: 10px;
+	}
+	
+	
+}
+
+

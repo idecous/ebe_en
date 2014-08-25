@@ -1,0 +1,156 @@
+.m7p_contentMainPanel table{
+	width: 100%;
+}
+.m7p_contentMainPanel table th{
+	font-size: 12px;
+    padding: 0 20px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.m7p_contentMainPanel table .productImage{
+	display: block;
+	padding: 0 0 20px;
+}
+.m7p_contentMainPanel table .productParam{
+	vertical-align: top;
+}
+.m7p_contentMainPanel table  .productName{
+	display: block;
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.m7p_contentMainPanel table textarea{
+	resize: none;
+	display: block;
+    height: 80px;
+    width: 80%;
+    border: 1px solid #c3c3c3;
+    padding: 10px;
+}
+.m7p_contentMainPanel table .price{
+	margin: 0 0 10px;
+	font-size: 16px;
+	font-style: italic;
+}
+.m7p_contentMainPanel table .addToCart input{
+	background:  #fff;
+    border: 1px solid #bebebc;
+    height: 33px;
+    line-height: 29px;
+    text-align: center;
+    width: 48px;
+    vertical-align: top;
+}
+.m7p_contentMainPanel table .linkEdit{
+	display:block;
+	margin-top: 5px;
+}
+.m7p_contentMainPanel table .btnRemove{
+	background: url("../../images/btn_trash.gif");
+    display: inline-block;
+    height: 13px;
+    width: 14px;
+}
+.m7p_contentMainPanel table .m7p_button {
+	 padding: 0 10px;
+}
+.m7p_contentMainPanel table .lastCell{
+	text-align: center;
+}
+
+.m7p_contentMainPanel .operationBlock{
+	padding: 20px 0;
+}
+.m7p_contentMainPanel .operationBlock .m7p_button{
+	margin-right: 10px;
+}
+.m7p_contentMainPanel .operationBlock .m7p_button:last-child{
+	margin-right: 0;
+}
+
+.m7p_contentMainPanel .phoneList{
+	margin: 0 10px;
+	display: none;
+}
+.m7p_contentMainPanel .phoneList .row{
+	padding-top:10px;
+	height: 205px;
+	border-bottom: 1px solid #ccc;
+}
+.m7p_contentMainPanel .phoneList .row:last-child{
+	border-bottom:none;
+}
+.m7p_contentMainPanel .phoneList .headCell{
+	float: left;
+	width: 100px;
+}
+.m7p_contentMainPanel .phoneList .headCell .productImage{
+	display: block;
+	width: 100px;
+}
+.m7p_contentMainPanel .phoneList .headCell .m7p_button{
+	border: 1px solid #000;
+	padding:0;
+	font-size: 9px;
+	line-height: 18px;
+	height: 18px;
+	width: 100px;
+	text-align: center;
+	margin-top: 4px;
+}
+.m7p_contentMainPanel .phoneList .contentCell{
+	position:relative;
+	margin-left: 120px;
+}
+.m7p_contentMainPanel .phoneList .contentCell .productName{
+	display: block;
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.m7p_contentMainPanel .phoneList .contentCell textarea{
+	resize: none;
+	display: block;
+    height: 80px;
+    width: 90%;
+    border: 1px solid #c3c3c3;
+    padding: 10px;
+}
+.m7p_contentMainPanel .phoneList .contentCell .price{
+	margin: 10px 0 0;
+	font-size: 12px;
+	font-style: italic;
+}
+.m7p_contentMainPanel .phoneList .contentCell .btnRemove{
+	position:absolute;
+	top:4px;
+	right:0;
+	background: url("../../images/btn_trash.gif");
+    display: inline-block;
+    height: 13px;
+    width: 14px;
+}
+
+@media only screen and (max-width: 784px) {
+	.m7p_contentMainPanel table{
+		display: none;
+	}
+	.m7p_contentMainPanel .operationBlock .m7p_button{
+		margin: 20px 0 0;
+	}
+	.m7p_contentMainPanel .operationBlock .m7p_button:first-child{
+		margin-top: 0;
+	}
+	.m7p_contentMainPanel .phoneList{
+		display: block;
+	}
+	.m7p_contentMainPanel .operationBlock{
+		padding: 0 10px;
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,735 @@
+
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Address Book</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://evebyeve.nextmp.net/media/favicon/default/fav.jpg" type="image/x-icon" />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport"  content="width=device-width, user-scalable=no" />
+<link rel="shortcut icon" href="http://evebyeve.nextmp.net/media/favicon/default/fav.jpg" type="image/x-icon" />
+
+<!--[if lt IE 7]>
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+    var BLANK_URL = 'http://evebyeve.nextmp.net/js/blank.html';
+
+    var BLANK_IMG = 'http://evebyeve.nextmp.net/js/spacer.gif';
+
+//]]>
+
+</script>
+
+<![endif]-->
+
+
+
+<link rel="stylesheet" type="text/css" href="http://evebyeve.nextmp.net/skin/frontend/default/eve/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://evebyeve.nextmp.net/skin/frontend/default/eve/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://evebyeve.nextmp.net/skin/frontend/default/default/aw_blog/css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://evebyeve.nextmp.net/skin/frontend/base/default/css/backorder.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://evebyeve.nextmp.net/skin/frontend/base/default/css/screen.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://evebyeve.nextmp.net/skin/frontend/default/eve/font-awesome/css/font-awesome.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://evebyeve.nextmp.net/skin/frontend/default/eve/css/ipad.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://evebyeve.nextmp.net/skin/frontend/default/eve/css/iphone.css" media="all" />
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/varien/js.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/varien/form.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/varien/weee.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/skin/frontend/default/eve/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/skin/frontend/default/eve/js/respond.min.js"></script>
+<link href="http://evebyeve.nextmp.net/index.php/blog/rss/index/store_id/1/" title="Blog" rel="alternate" type="application/rss+xml" />
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://evebyeve.nextmp.net/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.evebyeve.nextmp.net';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+    window.HDUSeed = '102257a8a989d4d7c66ebb407cef3a14';
+    window.HDUSeedIntId = setInterval(function() {
+        if (document.observe) {
+            document.observe('dom:loaded', function() {
+                for (var i = 0; i < document.forms.length; i++) {
+                    if (document.forms[i].getAttribute('action') && document.forms[i].getAttribute('action').match('contacts/index/post')) {
+                        var el = document.createElement('input');
+                        el.type = ('hidden');
+                        el.name = 'hdu_seed';
+                        el.value = window.HDUSeed;
+                        document.forms[i].appendChild(el);
+
+                    }
+                }
+            });
+            clearInterval(window.HDUSeedIntId)
+        }
+    }, 100)
+    //]]>
+</script><link rel="stylesheet" type="text/css" href="http://evebyeve.nextmp.net/skin/frontend/default/eve/aw_helpdeskultimate/css/main.css"
+      media="all"/>
+
+<script>
+    // Strip leading and trailing white-space
+    String.prototype.trim = function() {
+        return this.replace(/^\s*|\s*$/g, "");
+    }
+
+    function insQuot(href) {
+
+        document.getElementById('content_field').value =
+                (document.getElementById('content_field').value.replace(/\[quot.*?quot]/, '') +
+                        href.getElementsByTagName('textarea')[0].value).trim() + '\r\n';
+
+        document.getElementById('content_field').focus();
+
+        return false;
+    }
+</script><script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><script type="text/javascript">var textlink = "Backorder availability" </script>    </head>
+    <body class=" customer-address-index">
+
+ <link rel="stylesheet" type="text/css" href="public_en/css/account7play_extra.css" media="all" />   
+		<header class="e_centerBlock">
+			<form id="search_mini_form" action="/index.php/catalogsearch/result/" method="get">
+					<div class="searchBlock"><i></i><input type="text" name="q"/></div>
+			</form>
+			<a href="/" class="logo"><img src="public_en/images/logo.png" /></a>
+			<div class="rightBlock">
+				<div class="combox">
+				<span>中文</span><i></i>
+				<div class="popBlock">
+				<div class="topSeparator"></div>	
+				<ul>
+					<li><a href="http://www.evebyeves.com">English</a></li>
+						<li><a href="http://www.evebyeves.cn" class="unable">中文</a></li>
+				</ul></div></div>
+									<div class="combox account">
+					<span>ssssbbbbbb ssssbbbbbb</span><i></i>
+					<div class="popBlock">
+					<div class="topSeparator"></div>	
+					<ul>
+						<li><a href="/index.php/customer/account/">My Account</a></li>
+						<li><a href="/index.php/customer/account/logout/">Log Out</a></li>
+					</ul></div></div>
+<div class="shoppingCar"><i></i><span>ADD TO CART(</span><span>0</span><span>)</span><b></b>
+					<div class="popWindow">
+						<div class="lightRow"><i></i><span>ADD TO CART(</span><span>0</span><span>)</span><b></b></div>
+						<div class="listBlock">
+							<div class="totalRow">
+								<span>ALL ITEM ( </span><u>0</u><span> )</span>
+								<div class="totalSeparator"></div>
+							</div>
+							<div class="scrollPanel">
+								<div class="empty">Your Cart is Empty</div>
+								<div class="contentBlock">
+									<ul>
+<li><div class="imgContainer"><img src="http://evebyeve.nextmp.net/media/catalog/product/cache/1/small_image/150x219/9df78eab33525d08d6e5fb8d27136e95/y/1/y1432510-bi-01.4.jpg"/></div><div class="paramGroup"><div class="nameRow">ATLANTIS TOP</div><div>Size：M</div><div>Color：GEO GEM</div><div>Quantity：5</div><div class="priceRow">$65.00</div></div></li><li><div class="imgContainer"><img src="http://evebyeve.nextmp.net/media/catalog/product/cache/1/small_image/150x219/9df78eab33525d08d6e5fb8d27136e95/images/catalog/product/placeholder/small_image.jpg"/></div><div class="paramGroup"><div class="nameRow">MARGARET FULL COVERAGE BRA</div><div>Size：80A</div><div>Color：BLACK/GRAY</div><div>Quantity：1</div><div class="priceRow">$80.00</div></div></li><li><div class="imgContainer"><img src="http://evebyeve.nextmp.net/media/catalog/product/cache/1/small_image/150x219/9df78eab33525d08d6e5fb8d27136e95/1/0/1038210-bi-01.8.jpg.jpg"/></div><div class="paramGroup"><div class="nameRow">EMILY LACE BANDEAU</div><div>Size：XL</div><div>Color：IVORY</div><div>Quantity：1</div><div class="priceRow">$30.00</div></div></li><li><div class="imgContainer"><img src="http://evebyeve.nextmp.net/media/catalog/product/cache/1/small_image/150x219/9df78eab33525d08d6e5fb8d27136e95/1/3/13f1435-bi-01.8.jpg.jpg"/></div><div class="paramGroup"><div class="nameRow">ALLISON SHAPEWEAR ONE PIECE</div><div>Size：M</div><div>Color：NUDE</div><div>Quantity：1</div><div class="priceRow">$110.00</div></div></li>									</ul>
+								</div>
+								
+								<a href="javascript:;" class="pageArrow upArrow"><i></i></a>
+								<a href="javascript:;" class="pageArrow downArrow"><i></i></a>
+							</div>
+							<a class="payable" href="/index.php/checkout/cart/">CHIECK OUT</a>
+							<div style="clear: both;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="phoneShoppingcar" href="/index.php/checkout/cart/"></a>
+			<a class="phoneSearch" href="javascript:;"></a>
+		</header>
+		<nav class="topNavigation e_centerBlock">
+			<div class="phoneViewTopMenu">
+				<div class="button"><span>WOMEN</span><i></i></div>
+			</div>
+			<ul class="topNavlistModule">
+        <li  class="women"><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/women.html">Women</a><i></i></div><div class="popBlock"><ul><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/women/tops.html">Tops</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/women/sweaters.html">Sweaters</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/women/jackets.html">Jackets</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/women/coats.html">Coats</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/women/skirts.html">Skirts</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/women/dresses.html">Dresses</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/women/pants.html">Pants</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/women/swimwear.html">Swimwear</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/women/accessories.html">Accessories</a><i></i></div></li></ul></div></li><li  class="beauty"><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/beauty.html">Beauty</a><i></i></div><div class="popBlock"><ul><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/beauty/cosmetics.html">Cosmetics</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/beauty/skin-care.html">Skin Care</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/beauty/body.html">Body</a><i></i></div></li></ul></div></li><li  class="lingerie"><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/lingerie.html">Lingerie</a><i></i></div><div class="popBlock"><ul><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/lingerie/bras.html">Bras</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/lingerie/panties.html">Panties</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/lingerie/shapewear.html">Shapewear</a><i></i></div></li><li><div class="btnBlock"><a href="http://evebyeve.nextmp.net/index.php/lingerie/loungewear.html">Loungewear</a><i></i></div></li></ul></div></li>
+			</ul>			
+		</nav>
+
+		
+		
+		
+
+        <div class="wrapper" style="margin-top:20px;background:#FFFFFF;padding-top:30px;min-height:700px;">
+		                        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+            <div class="page layout-grid">
+<style type="text/css">
+	.cart .cart-collaterals .totals ul.checkout-types li:first-child{
+		float: left;
+		margin: 0;
+	}
+	.cart .cart-collaterals .totals ul.checkout-types li:last-child{
+		float: right;
+    	margin: 0 0 0 10px;
+	}
+	.cart .shipping .form-list select{
+		width: 250px;
+	}
+</style>
+<style type="text/css">
+	.cart-table .product-image img {
+	    margin: 15px 0 0 10px;
+	    width: 100px;
+	}
+</style>
+
+<style type="text/css">	
+	.button {
+		border: 2px solid #000;
+		color: #000;
+		background-color: #fff;
+		height: 35px;
+		line-height: 30px;
+	}
+	.button:hover{
+		color: #fff;
+		background-color: #000;
+	}
+	.cart .button{
+		height: 37px;
+    	line-height: 37px;
+	}
+	.link-wishlist{
+		height: 40px;
+		border: 2px solid #000;
+		color: #000;
+		background-color: #fff;
+		line-height: 40px;
+	}
+	.cart .link-wishlist{
+		padding: 8px 20px;
+	}
+	.link-wishlist:hover{
+		color: #fff;
+		background-color: #000;
+	}
+	.shipping-form .button, tfoot .button {
+		background:none!important;
+	}
+	tfoot .discount .button {
+		background:none!important;
+	}
+	.cart .tops {
+		 width: 397px;
+	}
+	
+	
+	
+</style>
+                <div class="main-container col2-left-layout">
+                    <div class="main">
+                                                                     
+                        <div class="col-main">
+                                                        <div class="my-account"><div class="page-title title-buttons">
+    <h1>Address Book</h1>
+    <button type="button" title="Add New Address" class="button" onclick="window.location='http://evebyeve.nextmp.net/index.php/customer/address/new/';"><span><span>Add New Address</span></span></button>
+</div>
+<div class="col2-set addresses-list">
+    <div class="col-1 addresses-primary">
+        <h2>Default Addresses</h2>
+        <ol>
+                    <li class="item">
+                <h3>Default Billing Address</h3>
+                <address>
+                    aa AAaa<br/>
+
+aasdfas<br />
+
+
+
+asdf,  Armed Forces Africa, asdf<br/>
+United States<br/>
+T: adfasdfa3
+<br/>F: a
+                </address>
+                <p><a href="http://evebyeve.nextmp.net/index.php/customer/address/edit/id/17/">Change Billing Address</a></p>
+           </li>
+        
+                    <li class="item">
+                <h3>Default Shipping Address</h3>
+                <address>
+                    aa AAaa<br/>
+
+aasdfas<br />
+
+
+
+asdf,  Armed Forces Africa, asdf<br/>
+United States<br/>
+T: adfasdfa3
+<br/>F: a
+                </address>
+                <p><a href="http://evebyeve.nextmp.net/index.php/customer/address/edit/id/17/">Change Shipping Address</a></p>
+            </li>
+                </ol>
+    </div>
+    <div class="col-2 addresses-additional">
+        <h2>Additional Address Entries</h2>
+        <ol>
+                    <li class="item empty">
+                <p>You have no additional address entries in your address book.</p>
+            </li>
+                </ol>
+    </div>
+</div>
+<div class="buttons-set">
+    <p class="back-link"><a href="http://evebyeve.nextmp.net/index.php/"><small>&laquo; </small>Back</a></p>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    function deleteAddress(addressId) {
+        if(confirm('Are you sure you want to delete this address?')) {
+            window.location='http://evebyeve.nextmp.net/index.php/customer/address/delete/id/'+addressId;
+        }
+        return false;
+    }
+//]]>
+</script></div>                        </div>
+                           <div class="col-left sidebar">
+                           <div class="block block-account">
+    <div class="block-title">
+        <strong><span>My Account</span></strong>
+    </div>
+    <div class="block-content">
+        <ul>
+                                                                                                    <li><a href="http://evebyeve.nextmp.net/index.php/customer/account/">Account Dashboard</a></li>
+                                                                                <li><a href="http://evebyeve.nextmp.net/index.php/customer/account/edit/">Account Information</a></li>
+                                                                                <li class="current"><strong>Address Book</strong></li>
+                                                                                <li><a href="http://evebyeve.nextmp.net/index.php/sales/order/history/">My Orders</a></li>
+                                                                                <li><a href="http://evebyeve.nextmp.net/index.php/wishlist/">My Wishlist</a></li>
+                                                                                <li><a href="http://evebyeve.nextmp.net/index.php/newsletter/manage/">Newsletter Subscriptions</a></li>
+                                                                                <li class="last"><a href="http://evebyeve.nextmp.net/index.php/helpdeskultimate/customer/">Help Desk</a></li>
+                                    </ul>
+    </div>
+</div>
+</div>
+                    </div>
+                </div>
+
+            </div>
+<div style="height:200px;clear: both;"></div>
+        </div>
+		
+
+<!-- ****注意添加 底部******  -->       
+		<footer class="e_centerBlock">
+
+			<a class="phoneUser" href="/index.php/customer/account/">yuan haisheng</a>
+			<a class="phoneUser" href="/index.php/customer/account/logout/">Quit</a>	
+	
+			<div class="shareGroup"><a href="http://www.facebook.com/evebyeves" class="icon01" target="_blank"></a><a href="https://twitter.com/evebyeves" class="icon02" target="_blank"></a><a href="http://www.pinterest.com/evebyeves" class="icon03" target="_blank"></a><a href="https://vimeo.com/evebyeves" class="icon04" target="_blank"></a><a href="http://instagram.com/evebyeves" class="icon05" target="_blank"></a></div>
+			<div class="navigationGroup"><a href="/index.php/my-accont/">MY ACCOUNT</a><a href="/index.php/customer-service/">CUSTOMER SERVICE</a><a href="/index.php/store-location/">STORE LOCATIONS</a><a href="/index.php/about-us/">ABOUT US</a><a href="/index.php/privacy-policy/">PRIVACY POLICY</a><a href="/index.php/condition-of-use/">CONDITIONS OF USE</a></div>	
+			<div class="copyright">&copy; 2014 Evebyeve's. All Rights Reserved.</div>		</footer>
+<!-- ****注意添加  脚本******  -->  
+
+<script type="text/javascript">
+	(function(){
+		var $ = jQuery;
+		var windowEl = $(window);
+		var bodyEl = $("body");
+		var phoneViewWidth = 785;
+		var windowScrollWidth = 0;
+		var headerEl = $("header");
+		var mianNavEl = $("body>nav");
+		var mainPanelEl = $("body>.mainPanel");
+		var footerEl = $("footer");
+		
+		var phoneMenuPlaceholderEl;
+		var screenHeightPlaceholderHandler = null;
+		if(footerEl.length==0){
+			phoneMenuPlaceholderEl = $(".phoneMenuPlaceholder");
+		}else{
+			phoneMenuPlaceholderEl = $("<div class='phoneMenuPlaceholder'></div>");
+			footerEl.after(phoneMenuPlaceholderEl);
+			var screenHeightPlaceholderEl = $("<div style='height:0;background-color:#fff;'></div>");
+			footerEl.before(screenHeightPlaceholderEl);
+			screenHeightPlaceholderHandler = function(){
+		        var tH = windowEl.height() - (bodyEl.height()-screenHeightPlaceholderEl.height()-phoneMenuPlaceholderEl.height());
+		        if(tH < 0){
+		            screenHeightPlaceholderEl.height(0);
+		        }else{
+		            screenHeightPlaceholderEl.height(tH);
+		        }
+		    };
+		}
+		var topComboxEls = $("header .combox");
+		var topComboxSelectorEls = topComboxEls.find(".popBlock");
+		var userNameEl = $("header>.rightBlock>.combox:eq(1)");
+		var windowResizeTimeID = 0;
+		var norNavBlockEl = $(".topNavigation");
+		var phoneViewMenuEl = $(".topNavigation>.phoneViewTopMenu");
+		
+		var isMobile = false;
+		if(navigator.userAgent.match(/Android/i)) {
+			isMobile= true;
+		}
+		if ((navigator.userAgent.indexOf('iPhone') != -1) || 
+			(navigator.userAgent.indexOf('iPod') != -1) || 
+			(navigator.userAgent.indexOf('iPad') != -1)) {
+		 	isMobile= true;
+		}
+		var winScrollWidth = isMobile?0:20;
+	
+		if(userNameEl.length != 0){
+			var nameDisplayEl = userNameEl.children("span");
+			var tStr = nameDisplayEl.text();
+			topComboxEls.eq(1).attr("title",tStr);
+			var nameDisplayWidth = nameDisplayEl.width();
+			var tempDivEl = $("<span></span>").appendTo( $("body") );
+			if( nameDisplayWidth < tempDivEl.width() ){
+				nameDisplayEl.show();
+				tempDivEl.detach();
+				return;
+			}
+			for(var i=tStr.length-1;i>=0;i--){
+				tempDivEl.text(  tStr.substring(0,i)  + "...");
+				if( tempDivEl.width() <= nameDisplayWidth ){
+					nameDisplayEl.text( tStr.substring(0,i) + "...");
+					nameDisplayEl.show();
+					tempDivEl.detach();
+					break;
+				}
+			}
+		}
+		$(".combox").mouseenter(function(){});
+		//--
+		var shoppingCarEl = $("header .shoppingCar");
+		var shoppingCarPopEl = shoppingCarEl.find(".popWindow");
+		var goodsItemEls = [];
+		var viewIndex = 0;
+		var countEL01 = $("header .shoppingCar>span:eq(1)");
+		var countEL02 = $("header .shoppingCar .popWindow .lightRow>span:eq(1)");
+		var countEL03 = $("header .shoppingCar .popWindow .totalRow>u");
+		var goodsScrollEl = $("header .shoppingCar .scrollPanel");
+		var goodsContentEl = $("header .shoppingCar .scrollPanel .contentBlock");
+		var upArrowEl = $("header .shoppingCar .scrollPanel>.upArrow").show();
+		var downArrowEl = $("header .shoppingCar .scrollPanel>.downArrow").show();
+		var ulEl = $("header .shoppingCar .scrollPanel ul");
+		var emptyEl = $("header .shoppingCar .scrollPanel .empty");
+		upArrowEl.click(function(){
+			goodsContentEl.stop();
+			viewIndex--;
+			if( viewIndex < 0){
+				viewIndex = 0;
+				return;
+			}
+			goodsContentEl.animate({"top": -viewIndex*160 },"fast" );
+			updateShoppingCarArrow();
+		});
+		downArrowEl.click(function(){
+			goodsContentEl.stop();
+			viewIndex++;
+			if(viewIndex == goodsItemEls.length-1){ 
+				viewIndex = goodsItemEls.length -2;
+				return;
+			}
+			goodsContentEl.animate({"top": -viewIndex*160 },"fast" );
+			updateShoppingCarArrow();
+		});
+		function updateShoppingCarItems(){
+			goodsItemEls = goodsContentEl.find("li");
+			countEL01.text(  goodsItemEls.length );
+			countEL02.text(  goodsItemEls.length );
+			countEL03.text(  goodsItemEls.length );
+			if( goodsItemEls.length == 0 || goodsItemEls.length == 1){
+				goodsScrollEl.height(171);
+			}else{
+				goodsScrollEl.height(331);
+			}
+			if( goodsItemEls.length == 0 ){
+				emptyEl.show();
+			}else{
+				emptyEl.hide();
+			}
+		}
+		function updateShoppingCarArrow(){
+			if( goodsItemEls.length < 3 ){
+				upArrowEl.hide();
+				downArrowEl.hide();
+				return;
+			}
+			if( viewIndex == 0 ){
+				upArrowEl.hide();
+			}else{
+				upArrowEl.show();
+			}
+			if( viewIndex == goodsItemEls.length -2 ){
+				downArrowEl.hide();
+			}else{
+				downArrowEl.show();
+			}
+		}
+		updateShoppingCarItems();
+		updateShoppingCarArrow();
+		goodsContentEl.css("top",0);
+		window.shoppingCarAppend = function(imgUrl,name,size,color,amount,price){
+			ulEl.prepend($('<li><div class="imgContainer"><img src="'+imgUrl+'"/></div>'+
+				'<div class="paramGroup">'+
+					'<div class="nameRow">'+ name+'</div>'+
+					'<div>'+ size+'</div>'+
+					'<div>'+ color+'</div>'+
+					'<div>'+ amount+'</div>'+
+					'<div class="priceRow">'+ price+'</div>'+
+				'</div>'+
+			  '</li>') );		
+			updateShoppingCarItems();
+			updateShoppingCarArrow();
+			shoppingCarPopEl.fadeIn("fast");
+		};
+		shoppingCarEl.mouseleave(function(){
+			shoppingCarPopEl.fadeOut("fast");
+		}).mouseenter(function(){
+			shoppingCarPopEl.fadeIn("fast");
+		});
+		//--
+		var phoneSearchBtnEl = $("header>.phoneSearch");
+		var phoneShoppingBtnEl = $("header>.phoneShoppingcar");
+		var topLogoEl = $("header>.logo");
+		var searchBlockEl = $("header>form>.searchBlock");
+		var searchInputEl = $("form:eq(0) input");
+		phoneSearchBtnEl.click(function(){
+			phoneSearchBtnEl.hide();
+			phoneShoppingBtnEl.hide();
+			topLogoEl.hide();
+			searchBlockEl.show();
+			isPhoneSearchStatus = true;
+		});
+		$("form:eq(0)").submit(function(){
+			if( $.trim(searchInputEl.val()) == "" ){
+				topLogoEl.css("display","");
+				phoneSearchBtnEl.css("display","");
+				phoneShoppingBtnEl.css("display","");
+				searchBlockEl.css("display","");
+				return false;
+			}
+		});
+		//--
+		var isPhoneMenuOpen = false;
+		var phoneMenuEl = $(".phoneViewTopMenu");
+		var phoneMenuBtnEl = $(".phoneViewTopMenu>.button");
+		var topNavlistModuleEl = $(".topNavlistModule");
+		var blurEl = $(".phoneViewArea>.logoBlock");
+		var isIndexPage = false;
+		var indexLogoBlockEl = $("body>.phoneViewArea>.logoBlock");
+		var footerEl =  $("body>footer");
+		var mainPanelEl = $("body>.mainPanel");
+		var sub01Els = $(".topNavlistModule .popBlock");
+		var sub02Els = $(".topNavlistModule .popBlock .subPopBlock");
+		var navBtnEls = $(".topNavlistModule li");
+		var openBtnEls = navBtnEls.find("i");
+		if( footerEl.length == 0){
+			isIndexPage = true;
+		}	
+		if( blurEl.length == 0){
+			blurEl = $(".mainPanel,footer");
+		}
+		function phoneMenuCloseHandler(){
+			topNavlistModuleEl.hide();
+			phoneMenuBtnEl.removeClass("checked");
+	   	 	isPhoneMenuOpen = false;
+	   	 	screenHeightChangeByMenuHandler();
+		}
+		function screenHeightChangeByMenuHandler(){
+			var navHeight = topNavlistModuleEl.height();
+			if( topNavlistModuleEl.is(":hidden") ){
+				navHeight = 0;
+			}
+			var tHeight,elHeight;
+			if( isIndexPage ){
+				elHeight = indexLogoBlockEl.height();
+				tHeight = navHeight - 8 - elHeight;
+			}else{
+				elHeight = footerEl.outerHeight() + mainPanelEl.height();
+				tHeight =  ( 8 + navHeight) - (120+ elHeight);
+			}
+			if(tHeight < 0 ){tHeight = 0;}
+		    phoneMenuPlaceholderEl.height(tHeight);
+		}
+		phoneMenuBtnEl.click(function(){
+			if( windowEl.width < phoneViewWidth - winScrollWidth){ return;}
+			if(isPhoneMenuOpen){
+				sub01Els.hide();
+				sub02Els.hide();
+				openBtnEls.removeClass("opened");
+				phoneMenuCloseHandler();
+			}else{
+				topNavlistModuleEl.show();
+				isPhoneMenuOpen = true;
+				phoneMenuBtnEl.addClass("checked");
+				screenHeightChangeByMenuHandler();		
+			}
+		});
+		phoneViewMenuEl.mouseleave(function(){
+			if(isPhoneMenuOpen){
+				sub01Els.hide();
+				sub02Els.hide();
+				openBtnEls.removeClass("opened");
+				phoneMenuCloseHandler();
+			}	
+		});
+		openBtnEls.click(function(){
+			var iEl = openBtnEls.eq( openBtnEls.index(this) );
+			var liEl = iEl.parent().parent();
+			var popBlockEl = liEl.children(".popBlock");
+			var subPopBlockEl = liEl.children(".subPopBlock");
+			if( iEl.hasClass("opened") ){
+				if(popBlockEl.length>0){
+					sub01Els.hide();
+					sub02Els.hide();
+					openBtnEls.removeClass("opened");
+				}else{
+					sub02Els.hide();
+					iEl.removeClass("opened");
+				}
+				screenHeightChangeByMenuHandler();
+				return;
+			}
+			if(popBlockEl.length>0){
+				sub01Els.hide();
+				sub02Els.hide();
+				openBtnEls.removeClass("opened");
+				popBlockEl.show();
+			}else{
+				sub02Els.hide();
+				subPopBlockEl.show();
+			}
+			iEl.addClass("opened");
+			screenHeightChangeByMenuHandler();
+		});	
+		function windowResizeHandler(){
+			if( windowEl.width() < phoneViewWidth - winScrollWidth){
+				if(topNavlistModuleEl.parent()[0] == norNavBlockEl[0]){
+					phoneViewMenuEl.append(topNavlistModuleEl);
+				}
+			}else{	
+				if( topLogoEl.is(":hidden") ){
+					topLogoEl.css("display","");
+					phoneSearchBtnEl.css("display","");
+					phoneShoppingBtnEl.css("display","");
+					searchBlockEl.css("display","");
+				}
+				sub01Els.css("display","");
+				sub02Els.css("display","");
+				if(topNavlistModuleEl.parent()[0] != norNavBlockEl[0]){
+					norNavBlockEl.append( topNavlistModuleEl );
+				}
+			}
+			if( screenHeightPlaceholderHandler){
+				screenHeightPlaceholderHandler();
+			}
+		}
+		var windowEl = $(window);
+		windowEl.resize(function(){
+	    	clearTimeout(windowResizeTimeID);
+	    	windowResizeTimeID = setTimeout( windowResizeHandler,100);
+	    });
+	    windowResizeHandler();
+
+
+
+	})();
+</script>
+<style type="text/css">	
+	 .main-container{
+	 	margin-top: 20px;
+	 }
+	 .wrapper{
+	 	background-color: #fff;
+	 }
+	.button {
+		border: 2px solid #000;
+		color: #000;
+		background-color: #fff;
+		height: 35px;
+		line-height: 30px;
+	}
+	.button:hover{
+		color: #fff;
+		background-color: #000;
+	}
+	.cart .button{
+		height: 37px;
+    	line-height: 37px;
+	}
+	.link-wishlist{
+		height: 40px;
+		border: 2px solid #000;
+		color: #000;
+		background-color: #fff;
+		line-height: 40px;
+	}
+	.cart .link-wishlist{
+		padding: 8px 20px;
+	}
+	.link-wishlist:hover{
+		color: #fff;
+		background-color: #000;
+	}
+	.shipping-form .button, tfoot .button {
+		background:none!important;
+	}
+	tfoot .discount .button {
+		background:none!important;
+	}
+	.cart .tops {
+		 width: 390px;
+	}
+	
+	
+	@media only screen and (max-width: 767px) {
+		.sidebar .block-account {
+		    display: block !important;
+		}
+	}
+	
+	
+	
+</style>
+
+    </body>
+</html>
+

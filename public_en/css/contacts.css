@@ -1,0 +1,75 @@
+.tSpacer{
+	height: 20px;
+}
+
+.m_contentMainPanel .leftBlock{
+	float:left;
+	width: 55%;
+}
+
+.m_contentMainPanel .rightBlock{
+	width: 30%;
+	float: right;
+	padding-top: 60px;
+}
+.m_contentMainPanel .rightBlock h3{
+	font-size: 16px;
+}
+.m_contentMainPanel .rightBlock p{
+	margin-top: 20px;
+	line-height: 22px;
+}
+.bSpacer{
+	height: 40px;
+}
+
+@media only screen and (min-width: 785px) and (max-width: 920px) {
+	.m_sidebar{
+		width: 180px;
+	}
+	.m_contentMainPanel .leftBlock {
+		margin-right: 10px;
+	}
+	.m_sidebar ul li a {
+		font-size: 11px;
+	}
+	.m_sidebar ul{
+		font-size: 11px;
+	}
+	
+	.m_contentMainPanel .leftBlock {
+		float: none;
+		width: auto;
+	}
+	.m_contentMainPanel .rightBlock {
+		float: none;
+		width: auto;
+		padding-top: 40px;
+	}
+}
+@media only screen and (max-width: 784px) {
+	.m_contentMainPanel{
+		float: none;
+		width: auto;
+	}
+	.m_sidebar , .m_contentMainPanel .leftBlock{
+		float: none;
+		width: auto;
+		padding: 0 10px;
+	}
+	.m_contentMainPanel .rightBlock{
+		float: none;
+		width: auto;
+		padding: 10px;
+	}
+	.m_button{
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+

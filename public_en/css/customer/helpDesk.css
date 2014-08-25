@@ -1,0 +1,23 @@
+.groupName{
+	display:inline-block;
+	font-size: 16px;
+	padding: 20px 0 10px;
+}
+.m7p_formList li .m7p_inputBox .inputTextarea.title textarea{
+	height: 40px;
+}
+.m7p_contentMainPanel .fileBlock {
+	height: 75px;
+}
+.m7p_contentMainPanel .fileBlock label{
+	display:block;
+	margin-bottom: 20px;
+}
+.m7p_contentMainPanel .operationBlock{
+	text-align: right;
+}
+@media only screen and (max-width: 784px) {
+	.m7p_contentMainPanel{
+		padding: 0 10px;
+	}
+}

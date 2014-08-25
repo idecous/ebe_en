@@ -1,0 +1,318 @@
+.stepGroup .m7p_messages li{
+	padding: 2px 10px;
+	margin: 0 0 4px;
+	font-size: 11px;
+}
+.stepGroup .m7p_messages{
+	margin-top: 10px;
+}
+.operationPanel{
+	width: 67%;
+	float:left;
+	sidePanel
+}
+.sidePanel{
+	width: 250px;
+	float: right;
+	border: 1px solid #ccc;
+}
+.sidePanel h3{
+	text-align:center;
+	font-size: 14px;
+	font-weight:bold;
+	border-bottom: 1px solid #ccc;
+	margin-top: 10px;
+	padding-bottom: 4px;
+}
+.sidePanel .toCart{
+	height:40px;
+	line-height:40px;
+	background-color: #f3f3f3;
+	text-align: center;
+}
+.sidePanel ul{
+	background-color: #f3f3f3;
+}
+.sidePanel ul li{
+	padding: 10px 20px;
+}
+.sidePanel ul li .thumbnail{
+	float: left;
+	width: 110px;
+}
+.sidePanel ul li .thumbnail img{
+	width: 100%;
+}
+.sidePanel ul li .param{
+	float: left;
+	margin-left: 10px;
+	line-height: 20px;
+}
+.sidePanel ul li .param a{
+	font-weight: bold;
+}
+.sidePanel ul li .param .price{
+	font-weight: bold;
+}
+.sidePanel .viewAll{
+	padding: 15px 0;
+	text-align: center;
+	background-color: #f3f3f3;
+}
+.sidePanel h1{
+	line-height:40px;
+	height:40px;
+	border-top:1px solid #ccc;
+	font-size:18px;
+	font-weight:bold;
+	text-align: center;
+	background-color: #f3f3f3;
+}
+.sidePanel .subtotal{
+	line-height:40px;
+	height:40px;
+	border-top:1px solid #ccc;
+	background-color: #f3f3f3;
+}
+.sidePanel .grandTotal{
+	line-height:40px;
+	height:40px;
+	border-top:1px solid #ccc;
+	font-weight: bold;
+	font-size: 16px;
+}
+.sidePanel .label{
+	float: left;
+	width: 145px;
+	text-align: right;
+}
+.sidePanel .val{
+	float: left;
+	width:95px;
+	text-align: right;
+}
+.stepGroup input[type="radio"]{
+	margin-right: 4px;
+}
+.stepGroup li{
+	padding-bottom: 10px;
+	font-size: 14px; 
+}
+.stepGroup li .stepTitle{
+   background: url(../../images/m7p/sectioncheckout.jpg) no-repeat scroll right 20px #f0eeef;
+   height: 60px;
+}
+.stepGroup li .stepTitle .number{
+	display: block;
+	background-color: #c8c6c7;
+	color: #fff;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	float: left;
+}
+.stepGroup li .stepTitle h2{
+	color: 	#c8c6c7;
+	line-height: 60px;
+	font-size: 14px;
+	float: left;
+	margin-left: 20px;
+}
+.stepGroup li .stepTitle a{
+	float: right;
+	margin: 22px 60px 0 0 ;
+	color: #f00;
+	font-weight: bold;
+	display: none;
+}
+.stepGroup .action .stepTitle .number{
+	background-color: #131210;
+}
+.stepGroup .action .stepTitle h2{
+	color: #131210;
+}
+.stepGroup .action .stepTitle{
+	background-image: url(../../images/m7p/activecheckout.jpg);
+}
+.stepGroup .action .stepOperation{
+	display: block;
+}
+.stepGroup .allow .stepTitle .number{
+	background-color: #c8c6c7;
+}
+.stepGroup .allow .stepTitle h2{
+	color: 	#c8c6c7;
+}
+.stepGroup .allow .stepTitle a{
+	display: block;
+}
+.stepGroup .allow .stepTitle{
+	background-image: url(../../images/m7p/donecheckout.png);
+}
+
+.stepGroup li .stepOperation{
+	padding: 40px 20px 40px 60px;
+    position: relative;
+    display: none;  
+}
+.stepGroup .login .loginBlock{
+	float: right;
+	width: 48%;
+}
+.stepGroup .login .registerBlock{
+	float: left;
+	width: 48%;
+}
+.stepGroup .login h4{
+	color: #2f2f2f;
+	font-size: 16px;
+	font-weight: bold;
+}
+.stepGroup .login p{
+	margin: 9px 0 40px 0;
+}
+.stepGroup .selectorRow{
+	line-height: 30px;
+	height: 30px;
+}
+.stepGroup .login .registerBlock button{
+	margin-top: 10px;
+}
+.stepGroup .billing button{
+	margin-top: 20px;
+}
+.stepGroup .shipping .useAddress{
+	margin: 20px 0 10px;
+}
+.stepGroup .shipping .useAddress input{
+	margin-right: 5px;
+}
+.stepGroup .shippingMethod dl dt{
+	line-height: 40px;
+	height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.stepGroup .shippingMethod dl dd{
+	color: #555;
+}
+.stepGroup .shippingMethod button{
+	margin: 10px 0;
+}
+.stepGroup .payment .help{
+	display:block;
+	padding-top: 35px;
+	font-size: 11px;	
+}
+.stepGroup .review .stepOperation{
+	padding: 10px;
+}
+
+.stepGroup .review table{
+	width: 100%;
+}
+.stepGroup .review table th{
+	padding: 20px 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+}
+.stepGroup .review table .rightCol{
+	width: 120px;
+	text-align: right;
+}
+.stepGroup .review table h3{
+	font-weight: bold;
+}
+.stepGroup .review table .param{
+	margin-top:10px;
+	line-height: 24px;
+}
+.stepGroup .review table .priceRow{
+	padding: 10px 0;
+}
+.stepGroup .review table .leftCol{
+	padding: 10px 0;
+	text-align: right;
+}
+.stepGroup .review table strong{
+	font-size: 18px;
+}
+.stepGroup .review .stepOperation .waitInfo{
+	position: static;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+}
+.stepGroup .review .stepOperation .waitInfo img{
+	vertical-align: middle;
+}
+
+.stepGroup .checkoutBlock{
+	position:relative;
+	border: 1px solid #f2f2f2;
+    padding: 10px 10px 0;
+    height: 45px;
+}
+.stepGroup .checkoutBlock .rightGroup{
+	float: right;
+	margin-top: 15px;
+}
+.stepGroup .stepOperation .waitInfo{
+	position: absolute;
+	right: 20px;
+	bottom: 40px;
+	display: none;
+}
+
+@media only screen and (max-width: 784px) {
+	.sidePanel{
+		display: none;
+	}
+	.operationPanel{
+		float: none;
+		width: 100%;
+	}
+	.stepGroup li .stepOperation {
+		padding:20px 10px 30px;
+	}
+	.stepGroup .login .loginBlock{
+		float: none;
+		width: 100%;
+	}
+	.stepGroup .login .registerBlock{
+		float: none;
+		width: 100%;
+		margin-top: 30px;
+	}
+	.m7p_formList .m7p_halfLeft {
+		float: none;
+		width: 100%;
+	}
+	.m7p_formList .m7p_halfRight {
+		float: none;
+		width: 100%;
+	}
+	.stepGroup .payment .help {
+		padding:0 0 20px;
+	}
+	.stepGroup .checkoutBlock{
+		height: 75px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

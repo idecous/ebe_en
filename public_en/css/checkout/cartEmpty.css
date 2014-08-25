@@ -1,0 +1,14 @@
+.info{
+	text-align:center;
+	line-height: 32px;
+	margin-top: 20px;
+}
+.info a:hover{
+	color: #ababab;
+}
+.m7p_tSpacer{
+	height: 50px;
+}
+.m7p_bSpacer{
+	height: 50px;
+}

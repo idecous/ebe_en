@@ -1,0 +1,163 @@
+.descriptBlock{
+	float: left;
+	width: 40%;
+}
+.descriptBlock h1{
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 30px;
+	height: 60px;
+}
+.descriptBlock h2{
+	font-size: 24px;
+	font-weight: normal;
+	margin-top: 35px;
+}
+.descriptBlock h3{
+	font-size: 18px;
+	font-weight: normal;
+}
+.descriptBlock b{
+	display:block;
+	font-size: 16px;
+	margin-top: 15px;
+	font-weight: normal;
+}
+.descriptBlock .separator{
+	height: 1px;
+	background-color: #000;
+	margin-top: 20px;
+	width: 72%;
+}
+.descriptBlock .operationGroup{
+	margin-top: 20px;
+}
+.descriptBlock .operationGroup a{
+	display: inline-block;
+	background: url(../../images/stores_operation.png);
+	width: 16px;
+	height: 16px;
+	margin-left: 4px;
+}
+.descriptBlock .operationGroup a:last-child{
+	background-position: -16px 0;
+	margin-left: 15px;
+}
+
+.m7p_contentMainPanel .mapBlock{
+	position:relative;
+	float: right;
+	padding-top: 30px;
+	width: 60%;
+}
+.m7p_contentMainPanel .mapBlock .mapGroup{
+	position:relative;
+	width: 100%;
+	overflow: hidden;
+}
+.m7p_contentMainPanel .mapBlock .mapGroup .placeholderBG{
+	width: 100%;
+}
+.m7p_contentMainPanel .mapBlock .mapGroup #mapCanvas{
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+}
+.m7p_contentMainPanel .mapBlock .infonWindow{
+	position:absolute;
+	left:0;
+	top:0;
+	width: 353px;
+	height: 145px;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 10;
+	display: none;
+}
+.m7p_contentMainPanel .mapBlock .infonWindow .closeBtn{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	top: 4px;
+	right: 4px;
+	background: url(../../images/store_close.png);
+}
+.m7p_contentMainPanel .mapBlock .infonWindow img{
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	border: 1px solid #000;
+	width: 134px;
+	height: 130px;
+}
+.m7p_contentMainPanel .mapBlock .infonWindow .descripBlock{
+	float: right;
+	width: 185px;
+	color: #fff;
+}
+.m7p_contentMainPanel .mapBlock .infonWindow .descripBlock h1{
+	font-size: 18.35px;
+	font-weight: normal;
+	margin-top: 8px;
+}
+.m7p_contentMainPanel .mapBlock .infonWindow .descripBlock h2{
+	font-size: 13.75px;
+	font-weight: normal;
+}
+.m7p_contentMainPanel .mapBlock .infonWindow .descripBlock p{
+	font-size: 12px;
+	line-height: 12px;
+	margin-top: 3px;
+}
+.m7p_contentMainPanel .mapBlock .infonWindow .descripBlock p:last-child{
+	font-size: 8px;
+	line-height: 14px;
+}
+
+@media only screen and (max-width: 784px) {
+	.descriptBlock{
+		float: none;
+		margin: 0;
+		width: 100%;
+		padding: 0 20px;
+	}
+	.m7p_contentMainPanel .mapBlock {
+		float: none;
+		width: auto;
+		text-align: center;
+	}
+	.m7p_contentMainPanel .mapBlock  .mapGroup{
+		display: inline-block;
+		width: 100%;
+		max-width: 535px;
+	}
+	
+	
+	.clearFloat{
+		height: 20px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

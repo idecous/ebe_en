@@ -1,0 +1,9 @@
+.groupName{
+	font-size: 18px;
+	padding: 20px 0 10px;
+}
+@media only screen and (max-width: 784px) {
+	.m7p_contentMainPanel{
+		padding: 0 10px;
+	}
+}
