@@ -1,0 +1,175 @@
+.multipleViewBlock{
+	text-align: center;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.multipleViewBlock .placeholderBG{
+	width: 100%;
+	max-width: 1200px;
+}
+.multipleViewBlock .contentBlock{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+.multipleViewBlock .contentBlock a{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none; 
+}
+.multipleViewBlock .contentBlock a img{
+	width: 100%;
+}
+.multipleViewBlock .contentBlock ul{
+	position: absolute;
+	top: 0;
+	left: 0;	
+	z-index: 10;
+	display: none;
+}
+.multipleViewBlock .contentBlock ul li{
+	float: left;
+}
+.multipleViewBlock .contentBlock ul li a{
+	position: static;
+	width: 100%;
+	display: block;
+}
+
+.multipleViewBlock .contentBlock .topSwitchNavBlock{
+	position: absolute;
+	left: 0;
+	bottom:10px;
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	z-index: 25;
+	display: none; 
+}
+.multipleViewBlock .contentBlock .topSwitchNavBlock a{
+	display: inline-block;
+	position:static;
+	float:none;
+	width: 16px;
+	height: 16px;
+	background: url(../images/general_top_switch_nav.png) no-repeat 0 0;
+	margin-left: 15px;
+}
+.multipleViewBlock .contentBlock .topSwitchNavBlock a.selected{
+	background-position: -16px 0;
+}
+.multipleViewBlock .contentBlock .topSwitchNavBlock a:first-child{
+	margin-left: 0;
+}
+.subTitlePanel{
+	height: 35px;
+	text-align: center;
+	padding-top: 25px;
+}
+.subTitlePanel .textBox{
+	font-size:14px;
+	color:#969292;
+	display:inline-block;
+	width: 220px;
+	height: 20px;
+	border-bottom: 1px solid #969292;
+}
+.subTitlePanel .textBox i{
+	display: inline-block;
+	width: 9px;
+	height: 10px;
+	background: url(../images/art_arrow01.png);
+	margin-left: 20px;
+}
+
+.tabBtnPanel{
+	position:relative;
+	height: 24px;
+	margin-top:35px;
+	margin-bottom: -1px;
+}
+.tabBtnPanel a{
+	display: inline-block;
+	color: #b1b3b6;
+	border: 1px solid #fff;
+	height: 22px;
+	line-height: 22px;
+	padding: 0 12px;
+}
+.tabBtnPanel a.checked{
+	border-color: #dcdcdc;
+	border-bottom: none;
+	color: #6d6e71;
+}
+
+.separator{
+	position:relative;
+	height:0;
+	border-bottom: 1px solid #b7b7b7; 
+}
+.centerBlock .contentBlock{
+	padding: 10px 10px 10px 0;
+	overflow-y: scroll;
+	height: 350px;	
+	border-bottom: 1px solid #b7b7b7; 
+}
+.centerBlock .contentBlock img{
+	float: left;
+}
+.centerBlock .contentBlock .textBlock{
+	margin-left: 280px;
+}
+.centerBlock .contentBlock .textBlock h1{
+	font-size: 24px;
+	font-weight:bold;
+	line-height: 40px;
+}
+.centerBlock .contentBlock .textBlock p{
+	margin-top:15px;
+	font-size: 14px;
+	text-indent: 2em;
+	line-height: 20px;
+	text-align: justify;
+}
+.m7p_bSpacer{
+	height: 60px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.multipleViewBlock .contentBlock ul{
+		display: block;
+	}
+	.multipleViewBlock .contentBlock .topSwitchNavBlock{
+		display: block;
+	}
+}
+@media only screen and (max-width: 784px) {
+	.centerBlock .contentBlock{
+		height: auto;
+		padding: 50px 10px;
+		text-align: center;
+		overflow-y:hidden;
+	}
+	.centerBlock .contentBlock img {
+		width:100%;
+		max-width:260px;
+		float: none;
+	}
+	.centerBlock .contentBlock .textBlock h1{
+		margin: 20px 0;
+	}
+	.centerBlock .contentBlock .textBlock{
+		margin: 0;
+		padding: 0 10px;
+	}
+}
+
+

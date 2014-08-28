@@ -1,0 +1,179 @@
+.topSwitchViewBlock{
+	text-align: center;
+	background-color: #141210;
+}
+.topSwitchViewBlock .container{
+	position: relative;
+	display: inline-block;
+}
+.topSwitchViewBlock .placeholderBG{
+	max-width: 1200px;
+}
+.topSwitchViewBlock .topSwitchNavBlock{
+	text-align: right;
+	bottom: 15px;
+}
+.topSwitchViewBlock .topSwitchNavBlock a:last-child{
+	margin-right: 130px;
+}
+.subTitlePanel{
+	height: 35px;
+	text-align: center;
+	padding-top: 25px;
+}
+.subTitlePanel .textBox{
+	font-size:14px;
+	color:#969292;
+	display:inline-block;
+	width: 220px;
+	height: 20px;
+	border-bottom: 1px solid #969292;
+}
+.subTitlePanel .textBox i{
+	display: inline-block;
+	width: 9px;
+	height: 10px;
+	background: url(../images/art_arrow01.png);
+	margin-left: 20px;
+}
+
+.mainPanel .listPanel{
+	position:relative;
+	background-color: #ebebeb;
+	padding: 60px 0 40px;
+	text-align: center;
+}
+.mainPanel .listPanel ul{
+	display:block;
+	width: 98%;
+	margin: 0 auto;
+}
+.mainPanel .listPanel ul li{
+	display:inline-block;
+	width: 25%;
+	float:left;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.mainPanel .listPanel ul li .contentBlock{
+	display: inline-block;
+	position:relative;
+	width: 95.9%;	
+	max-width: 235px;
+}
+.mainPanel .listPanel ul li .contentBlock:hover .overrImg{
+	 opacity: 1;
+	 -webkit-transition: opacity 0.5s linear 0s; 
+	 -moz-transition: opacity 0.5s linear 0s; 
+	 -ms-transition: opacity 0.5s linear 0s; 
+	 transition: opacity 0.5s linear 0s; 
+}
+.mainPanel .listPanel ul li .contentBlock:hover .descriptBlock{
+	opacity: 1;
+	 -webkit-transition: opacity 0.5s linear 0s; 
+	 -moz-transition: opacity 0.5s linear 0s; 
+	 -ms-transition: opacity 0.5s linear 0s; 
+	 transition: opacity 0.5s linear 0s; 
+}
+.mainPanel .listPanel ul li .contentBlock img{
+	width: 100%;
+}
+.mainPanel .listPanel ul li .contentBlock .overrImg{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s linear 0s; 
+	-moz-transition: opacity 0.5s linear 0s; 
+	-ms-transition: opacity 0.5s linear 0s; 
+	transition: opacity 0.5s linear 0s;
+}
+.mainPanel .listPanel ul li .contentBlock .descriptBlock{
+	position:absolute;
+	bottom:0;
+	left:0;
+	color: #fff;
+	height: 50%;
+	width: 100%;
+	text-align:center;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%,  rgba(0,0,0,1) 100%); 
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); 
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); 
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); 
+	background: linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); 
+	opacity: 0;
+	z-index: 2;
+	-webkit-transition: opacity 0.5s linear 0s; 
+	-moz-transition: opacity 0.5s linear 0s; 
+	-ms-transition: opacity 0.5s linear 0s; 
+	transition: opacity 0.5s linear 0s;
+}
+
+.mainPanel .listPanel ul li .descriptBlock p{
+	position:absolute;
+	width:100%;
+	left:0;
+	bottom:16%;
+	overflow:hidden;
+	height:16px;
+	text-align: center;
+}
+.mainPanel .listPanel ul li .descriptBlock i{
+	position:absolute;
+	display: block;
+	width: 100%;
+	height: 22px;
+	background: url(../images/art_list_icon_01.png) no-repeat center center;
+	bottom:38%;
+}
+.mainPanel .more{	
+	display: inline-block;
+	font-size:14px;
+	color: #969292;
+	margin-top: 30px;
+}
+
+
+@media only screen and (min-width: 501px) and (max-width: 785px) {
+
+	.mainPanel .listPanel ul li{
+		width: 33.33%;
+	}
+	.mainPanel .listPanel ul li .contentBlock{	
+		max-width: 275px;
+	}	
+}
+
+@media only screen and (max-width: 500px) {
+	.mainPanel .listPanel ul li{
+		float: none;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.mainPanel .listPanel ul li .contentBlock{	
+		width: 100%;
+		max-width: 275px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

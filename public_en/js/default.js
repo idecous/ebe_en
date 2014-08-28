@@ -2,7 +2,6 @@ $(function(){
 	var windowEl = $(window);
 	var bodyEl = $("body");
 	var phoneViewWidth = 785;
-	var windowScrollWidth = 0;
 	var headerEl = $("header");
 	var mianNavEl = $("body>nav");
 	var mainPanelEl = $("body>.mainPanel");
@@ -252,33 +251,36 @@ $(function(){
 	});	
 	//--
 	var TS_El = $(".topSwitchViewBlock"); 
+	var TS_PHBGEl = TS_El.find(".placeholderBG");
 	var TS_navBlock = TS_El.find(".topSwitchNavBlock");
 	var TS_placeholderEL = TS_El.find(".placeholderBG");
 	var TS_index = 0;
 	var TS_liWidth = 0;
 	var TS_liCount = 0;
 	var TS_timer = 0;
+	var TS_isInit = false;
 	if( TS_El.length > 0 ){
 		var TS_borderEl = TS_El.find(".switchContainer");
 		var TS_ulEl = TS_El.find("ul");
 		var TS_liEl = TS_ulEl.children("li");
 		TS_liCount = TS_liEl.length;
-		if( TS_liCount < 2 ){return;}
-		var fLiEl = TS_liEl.eq(0);
-		var lLiEl = TS_liEl.eq( TS_liCount-1 );
-		fLiEl.before( lLiEl.clone() );
-		lLiEl.after( fLiEl.clone() );
-		TS_liEl = TS_ulEl.children("li");
-		var str = "";
-		for( i=0; i < TS_liCount;i++){
-			str += "<a href='javascript:;'></a>";
+		if( TS_liCount > 1){
+			var fLiEl = TS_liEl.eq(0);
+			var lLiEl = TS_liEl.eq( TS_liCount-1 );
+			fLiEl.before( lLiEl.clone() );
+			lLiEl.after( fLiEl.clone() );
+			TS_liEl = TS_ulEl.children("li");
+			var str = "";
+			for( i=0; i < TS_liCount;i++){
+				str += "<a href='javascript:;'></a>";
+			}
+			TS_navBlock.append( $(str) );
+			var TS_navLiEls = TS_navBlock.find("a");
+			TS_navLiEls.click( TS_navLiClickHandler );	
 		}
-		TS_navBlock.append( $(str) );
-		var TS_navLiEls = TS_navBlock.find("a");
-		TS_navLiEls.click( TS_navLiClickHandler );
 	}
 	function TS_updateSize(){
-		if( TS_El.length == 0 ){return;}
+		if( !TS_isInit || TS_El.length == 0 ){return;}
 		clearTimeout(TS_timer);
 		TS_ulEl.stop();
 		TS_liWidth = TS_placeholderEL.width();
@@ -325,6 +327,17 @@ $(function(){
 			});
 		},5000);
 	}
+
+	if( TS_placeholderEL.prop("complete") ){
+		TS_isInit = true;
+		TS_updateSize();
+	}else{
+		TS_placeholderEL.load(function(){
+			TS_isInit = true;
+			TS_updateSize();
+		});
+	}
+	
 	//--
 	function windowResizeHandler(){
 		if( windowEl.width() < phoneViewWidth - winScrollWidth){
@@ -344,6 +357,7 @@ $(function(){
 				norNavBlockEl.append( topNavlistModuleEl );
 			}
 		}
+		
 		if( screenHeightPlaceholderHandler){
 			screenHeightPlaceholderHandler();
 		}
@@ -359,3 +373,6 @@ $(function(){
     //添加购物车
 	//shoppingCarAppend( "public_en/source/shoppingCar/001.jpg","name01","size01","Color01","amount01","￥ 2500.00");
 });
+
+
+

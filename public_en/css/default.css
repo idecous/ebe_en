@@ -665,16 +665,15 @@ footer .phoneUser{
 	display: inline-block;
 	width: 16px;
 	height: 16px;
-	background: url(../images/general_top_switch_nav.png) no-repeat -16px 0;
+	background: url(../images/general_top_switch_nav.png) no-repeat 0 0;
 	margin-left: 15px;
 }
 .topSwitchViewBlock .topSwitchNavBlock a.selected{
-	background-position: 0 0;
+	background-position: -16px 0;
 }
 .topSwitchViewBlock .topSwitchNavBlock a:first-child{
 	margin-left: 0;
 }
-
 
 @media only screen and (min-width: 785px) and (max-width: 1000px) {
 	.topNavigation .topNavlistModule>li {
