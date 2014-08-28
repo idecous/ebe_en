@@ -157,6 +157,7 @@ $(function(){
 	var topPadding = 145;
 	var logoTextMiddleTop = 30;
 	var navGroupPanelEl = $(".mainViewArea .navGroupPanel");
+	var navGroupViewEl = $(".mainViewArea .navGroupPanel .viewBlock");
 	var logoTextEl = $(".mainViewArea .logoText");
 	var mainViewEl = $(".mainViewArea");
 	var contenBlockEl = $(".mainViewArea .contentBlock");
@@ -293,13 +294,17 @@ $(function(){
 		var maxWidth = midSpaceHeight / navRate;
 		
 		if( maxWidth > 1197 ){
-			navGroupPanelEl.css("maxWidth",1197);
+			navGroupViewEl.css("maxWidth",1197);
 		}else{
-			navGroupPanelEl.css("maxWidth",maxWidth);
+			navGroupViewEl.css("maxWidth",maxWidth);
 		}
-		SV_containWidth = navGroupPanelEl.width();
-		navGroupPanelEl.css( {"top":90 + (screenHeight - 180 - navGroupPanelEl.height())/2,
-		"left": (screenWidth - SV_containWidth )/2 }  );
+		SV_containWidth = navGroupViewEl.width();
+		navGroupPanelEl.css( {"top":81 + (screenHeight - 180 - navGroupViewEl.height())/2,
+		"height": navGroupViewEl.height() + 18 }  );
+		
+		navGroupViewEl.css("left", (screenWidth - SV_containWidth )/2 );
+		
+		
 	    updateScrollHandler();
 	    contentResize(); 	   
 	}
@@ -328,8 +333,8 @@ $(function(){
 		bottomMiddleContentEl.css({"height":contentBlockHeight,"marginTop": -contentBlockHeight/2 });
 		bottomContentImgBlockEl.css( "marginTop" , (contentBlockHeight - imgHeight) / 2 );		
 		
-		SV_containWidth = navGroupPanelEl.width();
-		SV_pitch = navGroupPanelEl.width()/SV_overBlockEl.length ; 
+		SV_containWidth = navGroupViewEl.width();
+		SV_pitch = navGroupViewEl.width()/SV_overBlockEl.length ; 
 		for(var i=0; i < SV_overBlockEl.length;i++){
 			SV_overBlockEl.eq(i).css("left",i*SV_pitch);
 		}
