@@ -286,6 +286,7 @@ $(function(){
 		TS_liWidth = TS_placeholderEL.width();
 		TS_liEl.width( TS_liWidth );
 		TS_ulEl.width( TS_liWidth *  (TS_liCount +2 ) );
+		if( TS_liCount < 2){return;}
 		TS_setPosByIndex(TS_index);
 		TS_animaPosByAuto();
 	}

@@ -8,15 +8,22 @@
 .subViewBlock img{
 	width: 100%;
 }
-.subViewBlock h1{
+.subViewBlock .gray{
+	color: #393e3e;
+}
+.subViewBlock .gray h1{
 	font-size: 30px;
+}
+.subViewBlock .gray p{
+	font-size: 14px;
+}
+.subViewBlock h1{
+	font-size: 24px;
 	font-weight: normal;
 }
 .subViewBlock p{
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 18px;
-	height: 72px;
-	overflow-y:hidden;
 }
 .subViewBlock .buyBtn{
 	display: block;
@@ -24,15 +31,16 @@
 	height: 48px;
 	background:url(../images/buyButton04.png) no-repeat 0 0;
 	position:absolute;
-	left:0;
-	bottom: 10%;
+	right:0;
+	bottom: 40%;
 }
 .subViewBlock .textBlock{
+	text-align:right;
 	position: absolute;
 	bottom: 0;
-	left: 30px;
+	right: 20px;
 	width: 69%;
-	height: 87%;
+	height: 89%;
 }
 .subViewBlock .buyBtn:hover{
 	background-position: -152px 0;
@@ -65,14 +73,16 @@
 	width:700px;
 	text-align: center;
 	margin: 10px auto 0 auto;
-	color: #666666;
+	color: #000;
 	line-height: 14px;
+	font-size: 18px;
+	font-style: italic;	
 }
 .videoPlayer{
 	position:relative;
 	margin: 30px auto 0 auto;
 	width: 100%;
-	max-width: 720px;	
+	max-width: 720px;
 }
 .videoPlayer .bg{
 	width: 100%;
@@ -144,16 +154,22 @@
 	height: 200px;
 	margin: 20px auto 0 auto;
 }
+.recommendList li h4{
+	font-size: 14px;
+	margin: 5px auto 0 auto;
+	width: 275px;
+}
 .recommendList li p{
 	color: #999999;
 	width: 275px;
-	margin: 5px auto 0 auto;
+	margin: 0 auto;
 	text-align: justify;
 	line-height: 15px;
+	font-size: 12px;
 }
 .recommendList li .buyBtn{
 	position:absolute;
-	bottom:8px;
+	bottom:4px;
 	right:10px;
 	display: block;
 	width: 91px;
@@ -193,6 +209,10 @@
 		width: 200px;
 		height: 142.8px;
 	}
+	.recommendList li h4{
+		width: auto;
+	    padding: 0 10px;
+	}
 	.recommendList li p {
 		width: auto;
 		padding: 0 10px;
@@ -227,10 +247,10 @@
 	}	
 	.subViewBlock .leftBlock .textBlock {
 		position:absolute;
-		left: 30px;
+		text-align:right;
+		right: 10px;
 		top:40px;
 		bottom: 20px;
-		text-align: left;
 		height: auto;
 	}
 	.subViewBlock .rightBlock {
@@ -243,10 +263,13 @@
 	}
 	.subViewBlock .rightBlock .textBlock {
 		position:absolute;
-		left: 30px;
+		right: 20px;
 		top:40px;
 		bottom: 0;
-		text-align: left;
+		text-align: right;
+	}
+	.subViewBlock .buyBtn {
+		bottom: 30%;
 	}
 	.videoDescript , .recommendDescript{
 		width: auto;
@@ -256,7 +279,6 @@
 	.recommendList {
 		height: auto;
 		background-color: #fff;
-		
 	}
 	.recommendList li {
 		width: auto;
@@ -284,7 +306,6 @@
 		padding: 0 20px;
 		text-align: center;
 	}
-	
 	.recommendList li .buyBtn {
 		position:static;
 		background: url("../images/buyButton04.png");
@@ -297,11 +318,15 @@
 	.recommendList li .buyBtn:hover {
 		background-position: -152px 0;
 	}
-	
-	
 }
 
 @media only screen and (max-width: 450px) {
+	.subViewBlock .textBlock {
+		width: 100%;
+	}
+	.subViewBlock .buyBtn {
+		bottom: 15%;
+	}
 	.subViewBlock .textBlock p{
 		display: none;
 	}
