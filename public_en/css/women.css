@@ -19,17 +19,29 @@
 .subViewBlock h3{
 	position: absolute;
 	left: 2%;
-	top:24%;
+	top:22%;
 	text-align:left;
-	font-size: 48px;
+	font-size: 30px;
 	font-weight: normal;
 	font-family: Arial;
-	line-height: 55px;
+	line-height: 32px;
 	z-index: 10;
 	width: 46%;
 	height: 110px;
 	overflow: hidden;
 }
+.subViewBlock p{
+	position: absolute;
+	left: 2%;
+	top:37%;
+	width: 46%;
+	color: #666666;
+    line-height: 22px;
+    width: 320px;
+    font-size: 16px;
+    text-align: left;
+}
+
 .subViewBlock .buyBotton01{
 	position: absolute;
 	top: 56%;
@@ -103,23 +115,30 @@
 	width: 430px;
 	height: 340px;
 }
+.listViewBlock .TR.textBlock{
+	width: 380px;
+}
+
 .listViewBlock .textBlock h3{
 	font-size: 30px;
 	font-weight: normal;
 	line-height: 30px;
-	margin-top: 30px;
+	margin-top: 115px;
 }
 .listViewBlock .textBlock .shadow{
 	vertical-align: top;
+	margin-top: 10px;
 }
 .listViewBlock .textBlock b{
 	font-size: 30px;
 	display: block;
 }
 .listViewBlock .textBlock p{
-	width: 320px;
+	width: 340px;
 	line-height: 22px;
 	color: #666666;
+	font-size: 16px;
+	margin-top: 10px;
 }
 .listViewBlock .textBlock .buyBotton01{
 	position:absolute;
@@ -141,6 +160,12 @@
 		width: 100%;
 	}
 }
+@media only screen and (max-width: 940px) {
+	.listViewBlock .TR.textBlock {
+		width: 325px;
+	}
+}
+
 @media only screen and (min-width: 885px) and (max-width: 1000px) {
 	.listViewBlock .textBlock{
 		width: 325px;
@@ -195,6 +220,10 @@
 		padding-bottom: 30px;
 		border-bottom: 1px solid #e6e6e6;
 	}
+	.listViewBlock .TR.textBlock {
+		width: 100%;
+	}
+	
 	.listViewBlock .textBlock h3 {
 		 margin-top: 20px;
 	}
@@ -217,11 +246,14 @@
 @media only screen and (max-width: 767px) {
 	.subViewBlock h3{
 		font-size: 22px;
-		line-height: 30px;
-		height: 60px;
+		line-height: 24px;
+		top: 18%;
 	}
 	.subViewBlock{
 		margin-top: 10px;
+	}
+	.subViewBlock p{
+		width: 250px;
 	}
 }
 @media only screen and (max-width: 540px) {
@@ -239,6 +271,12 @@
 		max-width: 460px;
 	}
 	.subViewBlock h3 {
+		position: static;
+		width: auto;
+		text-align: center;
+		height: 60px;
+	}
+	.subViewBlock p{
 		position: static;
 		width: auto;
 		text-align: center;
