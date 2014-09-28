@@ -1,0 +1,14 @@
+.infoBlock{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -142px;
+	margin-top: -165px;
+}
+.entryBlock{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 40px;
+	height: 40px;
+}
