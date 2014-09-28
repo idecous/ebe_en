@@ -469,8 +469,9 @@
 	margin-right:30px;
 	width: 150px;
 }
-.extraPanel .mightLikeGroup .listBlock .listContainer ul li img{
-	width: 100%;
+.extraPanel .mightLikeGroup .listBlock .listContainer ul img{
+	width: 220px;
+	height: 150px;
 }
 .extraPanel .pageArrow{
 	position: absolute;
@@ -527,7 +528,8 @@
 	width: 150px;
 }
 .extraPanel .recentViewGroup .listContainer li img{
-	width: 100%;
+	width: 150px;
+	height: 220px;
 }
 .extraPanel .clearFloat{
 	height: 70px;
