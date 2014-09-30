@@ -139,6 +139,14 @@
 	line-height: 20px;
 	text-align: justify;
 }
+.centerBlock .contentBlock .textBlock ul{
+	margin-left: 15px; 
+}
+.centerBlock .contentBlock .textBlock ul li{
+	list-style: disc;
+}
+
+
 .m7p_bSpacer{
 	height: 60px;
 }
