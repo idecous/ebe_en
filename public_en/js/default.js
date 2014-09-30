@@ -14,7 +14,7 @@ $(function(){
 	}else{
 		phoneMenuPlaceholderEl = $("<div class='phoneMenuPlaceholder'></div>");
 		footerEl.after(phoneMenuPlaceholderEl);
-		var screenHeightPlaceholderEl = $("<div style='height:0;background-color:#fff;'></div>");
+		var screenHeightPlaceholderEl = $("<div class='footerBeforeHolder'></div>");
 		footerEl.before(screenHeightPlaceholderEl);
 		screenHeightPlaceholderHandler = function(){
 	        var tH = windowEl.height() - (bodyEl.height()-screenHeightPlaceholderEl.height()-phoneMenuPlaceholderEl.height());
