@@ -15,6 +15,7 @@
 	top: 0;
 } 
 .subViewBlock .leftBlock{
+	display:block;
 	position: relative;
 	float:left;
 	width: 66%;
@@ -101,6 +102,7 @@
 	vertical-align: middle;
 	text-align: center;
 	color: #000;
+	border: 1px solid #696969;
 }
 
 .recommendBlock li .descriptContainer h1{
@@ -266,7 +268,9 @@
 		height: auto;
 		width: auto;
 	}
-	
+	.recommendBlock li .descriptContainer .content br{
+		display: none;
+	}
 	
 }
 
