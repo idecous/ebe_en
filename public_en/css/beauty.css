@@ -70,6 +70,7 @@
 	font-weight: normal;
 }
 .videoDescript{
+	font-family: 'times';
 	width:700px;
 	text-align: center;
 	margin: 10px auto 0 auto;
@@ -97,6 +98,7 @@
 }
 
 .recommendTitle{
+	font-family: 'times';
 	margin-top: 65px;
 	text-align: center;
 	font-size: 24px;

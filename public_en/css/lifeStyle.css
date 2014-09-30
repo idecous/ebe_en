@@ -43,9 +43,11 @@
 	font-size: 30px;
 	font-weight: normal;
 	margin-top: 75px;
+	font-family: 'times';
 }
 .subViewBlock li .textBlock h1{
 	font-size: 48px;
+	font-family: 'times';
 }
 .subViewBlock li .textBlock p{
 	font-size: 14px;
@@ -81,6 +83,7 @@
 	left: 0;
 }
 .combinePanel .textBlock h2 {
+	font-family: 'times';
     font-size: 24px;
     font-weight: normal;
     text-align: center;

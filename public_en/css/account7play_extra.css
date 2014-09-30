@@ -1,23 +1,26 @@
 @font-face {
-font-family: 'ProximaNova-Regular';
-src: url('../fonts/29103D_4_0.eot');
-src: url('../fonts/29103D_4_0.eot?#iefix') format('embedded-opentype'),
-url('../fonts/29103D_4_0.woff') format('woff'), 
-url('../fonts/29103D_4_0.ttf') format('truetype');
-}
+ font-family: 'times';
+ src: url('../fonts/times.ttf');
+ src: url('../fonts/times.ttf') format('truetype');
+} 
 @font-face {
-font-family: 'ProximaNova-Bold';
-src: url('../fonts/29103D_5_0.eot');
-src: url('../fonts/29103D_5_0.eot?#iefix') format('embedded-opentype'),
-url('../fonts/29103D_5_0.woff') format('woff'), 
-url('../fonts/29103D_5_0.ttf') format('truetype');
-}
-
+ font-family: 'sabon';
+ src: url('../fonts/SabonLTStd-Roman.otf');
+ src: url('../fonts/SabonLTStd-Roman.otf') format('truetype');
+} 
+@font-face {
+ font-family: 'helveticaneue';
+ src: url('../fonts/helveticaneue-light.otf');
+ src: url('../fonts/helveticaneue-light.otf') format('truetype');
+} 
 html,body {
 	background: url('../images/bg_01.png');
 	-webkit-touch-callout: none; 
 	-webkit-text-size-adjust: none; 
 	-webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
+html,body, button, input, select, textarea {
+	font-family: 'helveticaneue';
 }
 .e_centerBlock{
 	width: 1100px;
@@ -399,6 +402,7 @@ nav.topNavigation .topNavlistModule .discover .btnBlock:hover>a{
 }
 
 nav.topNavigation .topNavlistModule li{
+	font-family: 'sabon';
 	position:relative;
 	height: 45px;
 	line-height: 45px;

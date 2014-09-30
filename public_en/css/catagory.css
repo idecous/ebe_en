@@ -165,6 +165,7 @@
 	width: 19.5%;
 }
 .mainViewArea .rightNavPanel h3{
+	font-family: 'times';
 	font-size: 14PX;
 }
 .mainViewArea .rightNavPanel ul{
@@ -175,11 +176,13 @@
 	font-size: 14PX;
 }
 .mainViewArea .rightNavPanel ul li a{ 
+	font-family: 'sabon';
 	display: inline-block;
 	height: 26px;
 	white-space: nowrap;
 }
 .mainViewArea .rightNavPanel ul .parentNode{
+	font-family: 'sabon';
 	font-weight: bold;
 }
 .mainViewArea .rightNavPanel ul .parentNode a{
@@ -258,18 +261,20 @@
 	display: block;
 }
 .mainViewArea .leftListPanel ul li a .infoBlock h3{
+	font-family: 'sabon';
 	position:absolute;
 	left:0px;
 	top:40%;
 	width:100%;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 20px;
 	height:40px;
 	overflow: hidden;
 }
 .mainViewArea .leftListPanel ul li a .infoBlock .price{
+	font-family: 'sabon';
 	position:absolute;
-	font-size: 18px;
+	font-size: 14px;
 	width: 100%;
 	left: 0;
 	bottom: 10px;

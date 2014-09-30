@@ -128,6 +128,7 @@
 	margin-left: 280px;
 }
 .centerBlock .contentBlock .textBlock h1{
+	font-family: 'times';
 	font-size: 24px;
 	font-weight:bold;
 	line-height: 40px;

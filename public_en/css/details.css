@@ -209,6 +209,7 @@
 	left: 0;
 }
 .mainParamBlock h1{
+	font-family: 'times';
 	line-height: 40px;
 	font-size: 24px;
 	font-weight: normal;
@@ -220,6 +221,7 @@
 	height: 60px;
 }
 .mainParamBlock .price{
+	font-family: 'sabon';
 	font-size: 20px;
 	color: #cc0000;
 	line-height: 60px;
@@ -237,11 +239,13 @@
 	text-justify: distribute;
 }
 .mainParamBlock h3{
+	font-family: 'sabon';
 	font-weight: normal;
 	font-size: 16px;
 	margin: 10px 0;
 }
 .mainParamBlock h2{
+	font-family: 'sabon';
 	font-weight: normal;
 	font-size: 16px;
 }
@@ -354,6 +358,7 @@
 	margin-top: 60px;
 }
 .mainParamBlock .actionRow a{
+	font-family: 'sabon';
 	display: inline-block;
 	width: 136px;
 	height: 41px;
@@ -435,6 +440,7 @@
 	width: 59%;
 }
 .extraPanel h4{
+	font-family: 'sabon';
 	font-size: 14px;
 	font-weight: normal;
 	text-align: center;

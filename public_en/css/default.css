@@ -1,17 +1,19 @@
 @font-face {
-font-family: 'ProximaNova-Regular';
-src: url('../fonts/29103D_4_0.eot');
-src: url('../fonts/29103D_4_0.eot?#iefix') format('embedded-opentype'),
-url('../fonts/29103D_4_0.woff') format('woff'), 
-url('../fonts/29103D_4_0.ttf') format('truetype');
-}
+ font-family: 'times';
+ src: url('../fonts/times.ttf');
+ src: url('../fonts/times.ttf') format('truetype');
+} 
 @font-face {
-font-family: 'ProximaNova-Bold';
-src: url('../fonts/29103D_5_0.eot');
-src: url('../fonts/29103D_5_0.eot?#iefix') format('embedded-opentype'),
-url('../fonts/29103D_5_0.woff') format('woff'), 
-url('../fonts/29103D_5_0.ttf') format('truetype');
-}
+ font-family: 'sabon';
+ src: url('../fonts/SabonLTStd-Roman.otf');
+ src: url('../fonts/SabonLTStd-Roman.otf') format('truetype');
+} 
+@font-face {
+ font-family: 'helveticaneue';
+ src: url('../fonts/helveticaneue-light.otf');
+ src: url('../fonts/helveticaneue-light.otf') format('truetype');
+} 
+
 @-webkit-keyframes fadeIn {
     0% {opacity: 0;}
     50% {opacity: 0;}
@@ -33,7 +35,7 @@ html,body {
 	-webkit-tap-highlight-color: rgba(0,0,0,0); 
 }
 html, button, input, select, textarea {
-    font: normal 13px 'ProximaNova-Regular',Arial,Helvetica,Verdana,sans-serif;
+    font: normal 13px 'helveticaneue',Arial,Helvetica,Verdana,sans-serif;
     color:#000000;
 }
 img,div,body,html,ul,li,a{ 
@@ -439,6 +441,7 @@ header .phoneShoppingcar span{
 }
 
 .topNavigation .topNavlistModule li{
+	font-family: 'sabon';
 	position:relative;
 	height: 45px;
 	line-height: 45px;

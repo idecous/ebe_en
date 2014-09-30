@@ -17,13 +17,13 @@
 	text-align: right;
 }
 .subViewBlock h3{
+	font-family: 'times';
 	position: absolute;
 	left: 2%;
 	top:22%;
 	text-align:left;
 	font-size: 30px;
 	font-weight: normal;
-	font-family: Arial;
 	line-height: 32px;
 	z-index: 10;
 	width: 46%;
@@ -120,6 +120,7 @@
 }
 
 .listViewBlock .textBlock h3{
+	font-family: 'times';
 	font-size: 30px;
 	font-weight: normal;
 	line-height: 30px;

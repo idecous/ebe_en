@@ -673,6 +673,7 @@ a.m7p_button{
 	color: #fff;
 }
 .m7p_pageTitle{
+	font-family: 'times';
 	font-size: 22px;
 	padding-bottom: 20px;
 }

@@ -41,10 +41,12 @@
 	z-index: 3;
 }
 .subViewBlock .textBlock h3{
+	font-family: 'times';
 	font-size: 28px;
 	font-weight: normal;
 }
 .subViewBlock .textBlock h1{
+	font-family: 'times';
 	font-size: 48px;
 	font-weight: normal;
 }
@@ -91,12 +93,14 @@
 	overflow: hidden;
 }
 .mainListPanel li h3{
+	font-family: 'times';
 	font-size: 18px;
 	text-align: center;
 	font-weight: normal;
 	margin-top: 30px;
 }
 .mainListPanel li h1{
+	font-family: 'times';
 	font-size: 24px;
 	text-align: center;
 	font-weight: normal;
@@ -118,6 +122,7 @@
 	margin-left: -76px;
 }
 .moreTitle{
+	font-family: 'times';
 	text-align:center;
 	font-size:24px;
 	color: #76627f;

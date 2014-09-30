@@ -11,6 +11,7 @@
 	margin: 26px auto 0 auto;
 }
 .aboutBlock h1{
+	font-family: 'times';
 	font-size: 30px;
 	line-height: 60px;
 }
