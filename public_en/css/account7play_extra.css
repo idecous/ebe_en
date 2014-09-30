@@ -403,6 +403,7 @@ nav.topNavigation .topNavlistModule .discover .btnBlock:hover>a{
 
 nav.topNavigation .topNavlistModule li{
 	font-family: 'sabon';
+	text-transform:uppercase;
 	position:relative;
 	height: 45px;
 	line-height: 45px;
