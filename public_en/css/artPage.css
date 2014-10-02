@@ -116,16 +116,19 @@
 	border-bottom: 1px solid #b7b7b7; 
 }
 .centerBlock .contentBlock{
-	padding: 10px 10px 10px 0;
-	overflow-y: scroll;
-	height: 350px;	
+
+	height: 360px;	
 	border-bottom: 1px solid #b7b7b7; 
 }
 .centerBlock .contentBlock img{
 	float: left;
 }
 .centerBlock .contentBlock .textBlock{
+	overflow-y: scroll;
 	margin-left: 280px;
+	height: 350px;	
+	margin-top: 10px;
+	padding-right: 10px;
 }
 .centerBlock .contentBlock .textBlock h1{
 	font-family: 'times';
@@ -145,8 +148,13 @@
 }
 .centerBlock .contentBlock .textBlock ul li{
 	list-style: disc;
+	line-height: 18px;
 }
 
+.centerBlock .videoLink{
+	display:block;
+	margin-top: 35px;
+}
 
 .m7p_bSpacer{
 	height: 60px;

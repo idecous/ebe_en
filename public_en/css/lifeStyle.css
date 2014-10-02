@@ -12,7 +12,6 @@
 }
 .subViewBlock{
 	background: url(../images/lifeStyle_bg01.jpg) no-repeat center;
-	margin-top: 65px;
 	width: 100%;
 }
 
@@ -32,15 +31,31 @@
 	bottom: 0;
 	width: 100%;
 }
+
+.subViewBlock li:first-child{
+	height: auto;
+}
+.subViewBlock li:first-child .imgBlock{
+	position: static;
+	display: block;
+}
+.subViewBlock li:first-child .imgBlock img{
+	width: 100%;
+}
+.subViewBlock li:first-child .shadow{
+	position: static;
+	vertical-align: top;
+}
+
 .subViewBlock li .textBlock {
 	position:absolute;
 	left:0;
 	top:0;
 	height: 100%;
-	width: 43%;
+	width: 40%;
 }
 .subViewBlock li .textBlock h3{
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: normal;
 	margin-top: 75px;
 	font-family: 'times';
@@ -74,6 +89,7 @@
 	position: relative;
 	height: 435px;   
     width: 100%;
+    display: none;
 }
 
 .combinePanel .textBlock{
@@ -84,12 +100,13 @@
 }
 .combinePanel .textBlock h2 {
 	font-family: 'times';
-    font-size: 24px;
+    font-size: 18px;
     font-weight: normal;
     text-align: center;
 }
 .combinePanel .textBlock p {
 	color: #666666;
+	margin-top: 10px;
 }
 .combinePanel .buyBtn {
     left: 59px;
@@ -126,6 +143,9 @@
 	display: block;
 }
 
+.bottomSpace{
+	height: 80px;
+}
 
 @media only screen and (max-width: 960px) {
 	.subViewBlock{

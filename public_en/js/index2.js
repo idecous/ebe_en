@@ -233,8 +233,8 @@ $(function(){
 	function updateScrollHandler(){
 		var rate = (100-scrollBar.value)/100;
 		contenBlockEl.css("top", topPadding + rate * (screenHeight - bottomPadding -topPadding) );
-		logoTextEl.css("top",30 + (70-43)*(1-rate) );
-		navGroupPanelEl.css( {"opacity":Math.pow(rate,3)});
+		logoTextEl.css("top",30 + (70-43)*(1-rate) );		
+		navGroupPanelEl.css( {"opacity":Math.pow(rate,3).toFixed(2) });
 	};
 	var touchStartY = 0;
 	$("body").bind("mousedown touchstart",function(e){
@@ -389,17 +389,17 @@ $(function(){
 		windowResizeHandler();
 	}
 	//--
-	var imgEvensEl = $(".mainViewArea .contentMiddleBlock>a>img:even").show();
+	var imgEvensEl = $(".mainViewArea .contentMiddleBlock>a>img:even").css("opacity",1);
 	var imgOddsEl = $(".mainViewArea .contentMiddleBlock>a>img:odd");
 	var imgBlocksEl = $(".mainViewArea .contentMiddleBlock>a");
 	imgBlocksEl.mouseenter(function(){
 		var index = imgBlocksEl.index(this);
-		imgEvensEl.eq( index ).hide();
-		imgOddsEl.eq( index ).show();	
+	//	imgEvensEl.eq( index ).css("opacity",0);
+		imgOddsEl.eq( index ).css("opacity",1);	
 	}).mouseleave(function(){
 		var index = imgBlocksEl.index(this);
-		imgEvensEl.eq( index ).show();
-		imgOddsEl.eq( index ).hide();
+	//	imgEvensEl.eq( index ).css("opacity",1);
+		imgOddsEl.eq( index ).css("opacity",0);
 	});
 	
 });
