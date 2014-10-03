@@ -155,6 +155,9 @@
 	display:block;
 	margin-top: 35px;
 }
+.centerBlock .videoLink video{
+	width: 100%;
+}
 
 .m7p_bSpacer{
 	height: 60px;
