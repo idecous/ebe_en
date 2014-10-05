@@ -270,6 +270,7 @@
 	line-height: 20px;
 	height:40px;
 	overflow: hidden;
+	text-transform: uppercase;
 }
 .mainViewArea .leftListPanel ul li a .infoBlock .price{
 	font-family: 'sabon';
