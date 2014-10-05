@@ -411,7 +411,7 @@ header .phoneShoppingcar span{
 	height: 45px;
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
-	font-size: 18px;
+	font-size: 16px;
 	z-index: 10;
 	white-space: nowrap;
 }
@@ -439,7 +439,6 @@ header .phoneShoppingcar span{
 .topNavigation .topNavlistModule .discover .btnBlock:hover>a{
 	color: #999999;
 }
-
 .topNavigation .topNavlistModule li{
 	font-family: 'sabon';
 	text-transform:uppercase;
@@ -513,6 +512,7 @@ header .phoneShoppingcar span{
 }
 .topNavigation .topNavlistModule li .popBlock ul li a{
 	padding-left: 10px;
+	font-size: 14px;
 }
 
 .topNavigation .phoneViewTopMenu{
