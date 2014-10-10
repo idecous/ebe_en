@@ -39,7 +39,7 @@ html, button, input, select, textarea {
     outline:none;
 }
 img,div,body,html,ul,li,a{ 
-	-webkit-user-select: none;
+	/*-webkit-user-select: none;*/
 }
 a{
 	text-decoration: none;
