@@ -494,8 +494,68 @@ $(function(){
 		}
 	});
 	//--
+	var PW_popWinEl = $(".popWindow");
+	var PW_blockEl = PW_popWinEl.find(".viewBlock");
+	var PW_imgEl = PW_blockEl.find("img");
+	var PW_imgWidth =0,  PW_imgHeight = 0;
+	var PW_openEl = $(".mainParamBlock .sizeDescript a");
+	var PW_closeEl = PW_popWinEl.find("a");
+	var PW_isPop = false;
+	
+	if(PW_imgEl.attr("complete")){
+		PW_init();
+	}else{
+		PW_imgEl[0].onload = PW_init;
+	}
+	function PW_init(){
+		PW_imgWidth = PW_imgEl.width();
+		PW_imgHeight = PW_imgEl.height();
+		PW_popWinEl.css("visibility","visible").hide();
+	}
+	function PW_updateView(){
+		if( !PW_isPop ){return;}
+		var wWidth = windEl.width();
+		var wHeight = windEl.height();
+		var rate = Math.max( PW_imgWidth/wWidth, PW_imgHeight/wHeight );
+		if( rate < 1){
+			rate = 1;
+		}
+		var nWidth = PW_imgWidth/rate,nHeight=PW_imgHeight/rate;
+		PW_blockEl.css({"width":nWidth,"height":nHeight,"left": (wWidth-nWidth)/2,"top":(wHeight-nHeight)/2});
+	};
+	PW_openEl.click(function(){
+		PW_isPop = true;
+		PW_popWinEl.show();
+		PW_updateView();
+	});
+	PW_closeEl.click(function(){
+		PW_isPop = false;
+		PW_popWinEl.hide();
+	});
+	
+	//--
 	windEl.resize(function(){
 		PV_updateViewListCountBySize();
 		ML_updateListCountBySize();
+		PW_updateView();
 	});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
