@@ -1,0 +1,16 @@
+.com_dateSelector{
+	position:relative;
+	width: 226px;
+	height: 17px;
+	border: 1px solid #606060;
+	padding: 2px 25px 0 4px;
+	background-color: #fff;
+}
+.com_dateSelector input{
+	width: 100%;
+	border: none;
+}
+.com_dateSelector .popBtn{
+	display: block;
+	width: 25px;
+}

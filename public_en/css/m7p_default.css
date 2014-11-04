@@ -432,6 +432,7 @@ header .rightBlock .shoppingCar .popWindow .empty{
 	width: 142px;
 	text-align: center;
 	cursor: default;
+	text-transform: uppercase;
 }
 .topNavigation .topNavlistModule li .btnBlock{
 	height: 45px;
