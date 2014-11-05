@@ -367,35 +367,49 @@ var EVE_DataPicker = function(el,monthNames,weekNames,todayText){
 	setDate( currentDate );
 };
 
-var Appointment = function(){
-	var openBtn = $(".comm_appointmentBar .normal");
+var AppointmentModule = function( type ){
+	var openBtn = $(".comm_appointmentBar .normal ."+type);
 	if(openBtn.length==0){return;}
 	var windEl = $(window);
 	var bodyEl = $("body");
 	var eMailReg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 	var isPop = false;
-	
-	new EVE_DataPicker(
-		$(".com_dateSelector"),
-		["January","February","March","April","May","June",
-		"July","August","September","October","November","December"],
-		["Mon","Tue","Wed","Thur","Fri","Sat","Sun"],
-		"Today"
-	);
+
 	var popWinEl = $(".comm_appointmentPopWindow");
-	var blockEl = popWinEl.find(".block");
-	var closeBtnEl = blockEl.find(".closeBtn");
-	var formEl = popWinEl.find("form");
+	var blockEls = popWinEl.find(".block");
+	var blockEl = popWinEl.find(".block."+type);
+
+	var closeBtnEl = blockEl.find(".closeBtn,.topBar>a");
+	var formEl = blockEl.find("form");
 	var borderEl = formEl.find(">div>div>.inputBorder");
 	var inputEls = borderEl.find(">input,>select");
 	
+	if(type=="en"){
+		new EVE_DataPicker(
+			blockEl.find(".com_dateSelector"),
+			["January","February","March","April","May","June",
+			"July","August","September","October","November","December"],
+			["Mon","Tue","Wed","Thur","Fri","Sat","Sun"],
+			"Today"
+		);
+	}else{
+		new EVE_DataPicker(
+			blockEl.find(".com_dateSelector"),
+			["一月","二月","三月","四月","五月","六月",
+			"七月","八月","九月","十月","十一月","十二月"],
+			["一","二","三","四","五","六","七"],
+			"今日"
+		);
+	}
 	openBtn.click(function(){
 		isPop = true;
+		blockEl.show();
 		popWinEl.show();
 		updateView();
 	});
 	closeBtnEl.click(function(){
 		popWinEl.hide();
+		blockEls.hide();
 	});
 	function updateView(){
 		if( !isPop ){return;}
@@ -421,9 +435,13 @@ var Appointment = function(){
 		}
 		return result;
 	});
+	
 };
 
-
+var Appointment = function(){
+	new AppointmentModule("cn");
+	new AppointmentModule("en");
+};
 
 
 $(function(){
