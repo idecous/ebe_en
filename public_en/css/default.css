@@ -1372,7 +1372,9 @@ footer .phoneUser{
 	.mainPanel{
 		margin-top: 0;
 	}
-	
+	.mainPanel .comm_appointmentBar {
+		display: none;
+	}
 	footer{
 		height: auto;
 		padding-top: 40px;
