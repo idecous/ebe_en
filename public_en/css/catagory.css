@@ -103,6 +103,26 @@
 	height: 27px;
 	line-height: 27px;
 }
+.subNav7filterPanel .filterGroup .combox .unable a{
+	color: #999;
+}
+.subNav7filterPanel .filterGroup .combox.size{
+	z-index: 2;
+}
+.subNav7filterPanel .filterGroup .combox.size .topSeparator{
+	width: 70px;
+	top: 23px;
+}
+.subNav7filterPanel .filterGroup .combox.size ul{
+	width: 367px;
+	background-color: #fff;
+	border-top:2px solid #bfbfbf;
+}
+.subNav7filterPanel .filterGroup .combox.size ul li{
+	display: inline-block;
+	width: 16.66%;
+}
+
 .subNav7filterPanel .filterGroup .pageSize{
 	width: 40px;
 }
