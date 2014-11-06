@@ -1,0 +1,250 @@
+.topGroup{
+	padding-top: 40px;
+	text-align: center;
+}
+.topGroup h1{
+	font-size: 30.4px;
+	font-weight: normal;
+}
+.topGroup .shareGroup{
+	height: 32px;
+	margin-top: 30px;
+}
+.topGroup .shareGroup a{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-left: 20px;
+	background:url(../../images/icons.png) no-repeat;
+}
+.topGroup .shareGroup a:first-child{
+	margin-left: 0;
+}
+.topGroup .shareGroup .icon01{
+	background-position: 0 -24px;
+}
+.topGroup .shareGroup .icon02{
+	background-position: -32px -24px;
+}
+.topGroup .shareGroup .icon03{
+	width: 33px;
+	height: 33px;
+	background-position: -64px -24px;
+}
+.topGroup .shareGroup .icon04{
+	background-position: 0 -56px;
+}
+.topGroup .newsletter{
+	width: 270px;
+	height:20px;
+	line-height:20px;
+	margin: 40px auto 0 auto;
+	text-align: left;
+}
+.topGroup .newsletter input{
+	vertical-align: middle;
+}
+.topGroup .newsletter label{
+	margin-left: 5px;
+	font-size: 11px;
+	vertical-align: middle;
+}
+.topGroup .operation{
+	width: 270px;
+	margin: 2px auto 0 auto;
+	text-align: left;	
+}
+.topGroup .operation .inputBorder{
+	width: 120px;
+	padding: 10px;
+	border: 1px solid #000;
+	margin-right: 10px;
+	display: inline-block;
+}
+.topGroup .operation .inputBorder input{
+	width: 100%;
+	border: none;
+}
+.topGroup .operation a{
+	display:inline-block;
+	border: 2px solid #000;
+	color: #000;
+	background-color: #fff;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 17px;
+	font-size: 14px;
+}
+.topGroup .operation a:first-child{
+	padding: 0 8px;
+	margin-right: 10px;
+	font-size: 12.8px;
+}
+.topGroup .operation a:hover{
+	color: #fff;
+	background-color: #000;
+}
+.bottomGroup{
+	width: 100%;
+	margin:  65px auto 0 auto;
+}
+.bottomGroup .subTitle{
+	position: relative;
+	height: 25px;
+	line-height: 25px;
+}
+.bottomGroup .subTitle h1{
+	font-size: 24px;
+	font-weight: normal;
+	float: left;
+}
+.bottomGroup .subTitle span{
+	font-size: 12px;
+	position: absolute;
+	top: 0;
+	right: 0;      
+}
+.bottomGroup .separator{
+	width: 100%;
+	height: 0;
+	border-bottom: 1px solid #000;
+}
+.bottomGroup .listBlock{
+	margin-left: -45px;
+}
+.bottomGroup ul{
+	width: 100%;
+	margin-top: 30px;
+}
+.bottomGroup ul li{
+	position:relative;
+	width: 25%;
+	float: left;
+}
+.bottomGroup ul li .border{
+	margin-left: 45px;
+}
+.bottomGroup ul li .border img{
+	width: 100%;
+}
+
+.bottomGroup ul li .vRule{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 22px;
+	border-left: 1px solid #696969; 
+}
+
+.bottomGroup ul li h3{
+	font-size: 15px;
+	font-weight: normal;
+	margin: 4px 0 0 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.bottomGroup ul li .price{
+	color:#fe0606;
+	font-size: 15px;
+	line-height: 50px;
+	height: 50px;
+	margin-left: 5px;
+	width:180px;
+}
+.bottomGroup ul li a{
+	display: block;
+	width: 110px;
+	height: 35px;
+	border: 1px solid #d2d2d2;
+	line-height: 35px;
+	text-align: center;
+}
+
+.bottomSpace{
+	height: 120px;
+}
+@media only screen and (max-width: 784px) {
+	.topGroup{
+		padding: 0 10px;
+	}
+	.topGroup .newsletter {
+		width: auto;
+		margin: 20px 0;
+	}
+	.topGroup .operation{
+		width: auto;
+		margin: 0;
+	}
+	.topGroup .operation .inputBorder {
+		display:block;
+		margin-right: 0;
+		width: auto;
+		padding: 10px 4px;
+	}
+	.topGroup .operation a{
+		display: block;
+		margin-top: 20px;
+		text-align: center;
+	}
+	
+	.bottomGroup .subTitle{
+		height: auto;
+	}
+	.bottomGroup .subTitle h1{
+		float: none;
+		text-align: center;
+	}
+	.bottomGroup .subTitle span{
+		position: static;
+		display: block;
+		text-align: center;
+		line-height: 30px;
+	}	
+	
+	.bottomGroup .listBlock{
+		margin: 0;
+	}
+	.bottomGroup ul li{
+		width:auto;
+		float: none;	
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.bottomGroup ul li .border {
+		display: inline-block;
+		width: 100%;
+		max-width: 190px;
+		margin: 0;
+	}
+	.bottomGroup ul li .price{
+		line-height: 30px;
+		height: 30px;
+	}
+	.bottomGroup ul li a{
+		display: inline-block;
+	}
+	.bottomGroup ul li .vRule{
+		display: none;
+	}
+
+		
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
