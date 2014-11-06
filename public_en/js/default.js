@@ -378,12 +378,6 @@ var AppointmentModule = function( type ){
 	var popWinEl = $(".comm_appointmentPopWindow");
 	var blockEls = popWinEl.find(".block");
 	var blockEl = popWinEl.find(".block."+type);
-
-	var closeBtnEl = blockEl.find(".closeBtn,.topBar>a");
-	var formEl = blockEl.find("form");
-	var borderEl = formEl.find(">div>div>.inputBorder");
-	var inputEls = borderEl.find(">input,>select");
-	
 	if(type=="en"){
 		new EVE_DataPicker(
 			blockEl.find(".com_dateSelector"),
@@ -401,6 +395,13 @@ var AppointmentModule = function( type ){
 			"今日"
 		);
 	}
+
+	var closeBtnEl = blockEl.find(".closeBtn,.topBar>a");
+	var formEl = blockEl.find("form");
+	var borderEl = formEl.find(">div>div>.inputBorder");
+	var inputEls = borderEl.find(">input,>select");
+	
+	
 	openBtn.click(function(){
 		isPop = true;
 		blockEl.show();

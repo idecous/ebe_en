@@ -659,6 +659,7 @@ header .phoneShoppingcar span{
 .comm_appointmentPopWindow .formBlock input[type='text']{
 	border: 1px solid #fff;
 	width: 100%;
+	
 }
 .comm_appointmentPopWindow .formBlock .inputBorder{
 	border: 1px solid #4b4b4b;
@@ -673,7 +674,6 @@ header .phoneShoppingcar span{
 .comm_appointmentPopWindow .formBlock .colA{
 	float: left;
 	width: 40%;
-	margin-bottom: 10px;
 }
 .comm_appointmentPopWindow .formBlock .colB{
 	float: left;
@@ -691,9 +691,11 @@ header .phoneShoppingcar span{
 .comm_appointmentPopWindow .formBlock .colC{
 	float: left;
 	width: 60%;
+	margin-bottom: 10px;
 }
 .comm_appointmentPopWindow .formBlock .colD{
-	clear: both;
+	width:100%;
+	float: left;
 }
 .comm_appointmentPopWindow .formBlock .colD textarea{
 	width: 100%;
@@ -702,6 +704,8 @@ header .phoneShoppingcar span{
 	resize: none;
 }
 .comm_appointmentPopWindow .block .separator{
+	clear:both;
+	height:0;
 	border-bottom: 1px solid #acacac;
 	margin-top: 15px;
 }
