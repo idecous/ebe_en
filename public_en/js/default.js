@@ -289,7 +289,7 @@ var EVE_DataPickerDateSelector = function(ownerEl,weekNames){
 var EVE_DataPicker = function(el,monthNames,weekNames,todayText){
 	var currentDate = new Date();
 	var isOpen = false;
-	var inputEl = $("<input type='text' class='dateInput' readonly='readonly'/>").appendTo(el);
+	var inputEl = $("<input name='aaa' type='text' class='dateInput' readonly='readonly'/>").appendTo(el);
 	var infoEl = $("<span class='info'>YYYY/MM/DD</span>").appendTo(el);
 	var popBtnEl = $("<a href='javascript:;' class='popBtn'></a>").appendTo(el);
 	var popBlockEl = $("<div class='popBlock'></div>").appendTo(el);

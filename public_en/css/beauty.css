@@ -13,6 +13,7 @@
 }
 .subViewBlock .gray h1{
 	font-size: 30px;
+	position: absolute;
 }
 .subViewBlock .gray p{
 	font-size: 14px;

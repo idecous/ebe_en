@@ -89,7 +89,6 @@
 	position: relative;
 	height: 435px;   
     width: 100%;
-    display: none;
 }
 
 .combinePanel .textBlock{
@@ -154,9 +153,7 @@
 	.subViewBlock li {
 		height: auto;
 	}
-	.subViewBlock li .shadow {
-		display: none;
-	}
+
 	.subViewBlock li .imgBlock{
 	 	position: static;
 	 	text-align: center;
@@ -174,6 +171,7 @@
 		height: auto;
 		position: static;	
 		text-align: center;
+		padding-bottom: 40px;
 	}
 	.subViewBlock li .textBlock h3 {
 		margin-top: 30px;
