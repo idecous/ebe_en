@@ -401,7 +401,6 @@ var AppointmentModule = function( type ){
 	var borderEl = formEl.find(">div>div>.inputBorder");
 	var inputEls = borderEl.find(">input,>select");
 	
-	
 	openBtn.click(function(){
 		isPop = true;
 		blockEl.show();
@@ -444,9 +443,38 @@ var Appointment = function(){
 	new AppointmentModule("en");
 };
 
+var ToApp = function(){
+	var openBtnEl = $(".comm_appBlock a");
+	if( openBtnEl.length == 0){return;}
+	var windEl = $(window);
+	var bodyEl = $("body");
+	var isPop = false;
+	var popWinEl = $(".comm_appPopWindow");
+	var blockEl = popWinEl.find(".panel");
+	var closeBtnEl = popWinEl.find(".closeBtn");
+	
+	openBtnEl.click(function(){
+		isPop = true;
+		blockEl.show();
+		popWinEl.show();
+		updateView();
+	});
+	function updateView(){
+		if( !isPop ){return;}
+		blockEl.css({"left": (windEl.width()-blockEl.width())/2,
+		"top":(windEl.height()-blockEl.height())/2});
+	};
+	closeBtnEl.click(function(){
+		popWinEl.hide();
+		blockEl.hide();
+	});
+	windEl.resize(updateView);
+};
+
 
 $(function(){
 	new Appointment();
+	new ToApp();
 	
 	var windowEl = $(window);
 	var bodyEl = $("body");
