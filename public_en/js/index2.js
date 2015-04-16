@@ -279,7 +279,7 @@ $(function(){
 	var SV_liCount = SV_overBlockEl.length;
 	//--
 	var windowEl = $(window);
-	windowEl.resize(windowResizeHandler);
+//	windowEl.resize(windowResizeHandler);
 	function windowResizeHandler(){
 		if( !isInit){return;}
 		screenHeight = mainViewEl.height();
@@ -293,16 +293,16 @@ $(function(){
 		var navRate = 621/1197;
 		var maxWidth = midSpaceHeight / navRate;
 		
-		if( maxWidth > 1197 ){
-			navGroupViewEl.css("maxWidth",1197);
-		}else{
-			navGroupViewEl.css("maxWidth",maxWidth);
-		}
+		//if( maxWidth > 1197 ){
+		//	navGroupViewEl.css("maxWidth",1197);
+		//}else{
+		//	navGroupViewEl.css("maxWidth",maxWidth);
+		//}
 		SV_containWidth = navGroupViewEl.width();
 		navGroupPanelEl.css( {"top":81 + (screenHeight - 180 - navGroupViewEl.height())/2,
 		"height": navGroupViewEl.height() + 18 }  );
 		
-		navGroupViewEl.css("left", (screenWidth - SV_containWidth )/2 );
+	//	navGroupViewEl.css("left", (screenWidth - SV_containWidth )/2 );
 		
 		
 	    updateScrollHandler();

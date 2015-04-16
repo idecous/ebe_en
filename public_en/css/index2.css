@@ -26,6 +26,7 @@
 	top:100px;
 	left:0;
 	width: 100%;
+    min-width: 1000px;
 	background-color: #363434;
 }
 .navGroupPanel .viewBlock{
@@ -33,6 +34,9 @@
 	top: 9px;
 	left:0;
 	overflow: hidden;
+    width: 1197px;
+    left: 50%;
+    margin-left: -598px;
 }
 .navGroupPanel .placeholderBG{
 	width: 100%;
@@ -506,6 +510,7 @@
 	top: 0;
 	right:0;
 	display: none;
+    min-width: 1000px;
 }
 .mainViewArea .contentBlock .bottomContent{
 	position: relative;
@@ -640,92 +645,92 @@
 }
 
 
-@media only screen and (min-width: 785px) and (max-width: 1000px) {
-	.mainViewArea .centerBlock{
-		width: 100%;	
-	}
-	.mainViewArea .bottomPanelA{
-		width: 100%;
-	}
-	.topNavigation .topNavlistModule>li {
-	    width: 14.2%;
-	    max-width: 142px;
-	}
-}
-@media only screen and (max-width: 960px) {
-	.mainViewArea .bottomPanelA .navigationGroup{
-		width: 360px;
-	}
-	.mainViewArea .bottomPanelA .navigationGroup a {
-		width: 180px;
-		margin-right: 0;
-	}
-	.mainViewArea .bottomPanelA .navigationGroup {
-		left: 10px;
-	}
-	.mainViewArea .bottomPanelA .shareGroup {
-		right: 10px;
-	}
-	.mainViewArea .bottomPanelA .copyright {
-		right: 10px;
-	}
-	
-}
+/*@media only screen and (min-width: 785px) and (max-width: 1000px) {*/
+	/*.mainViewArea .centerBlock{*/
+		/*width: 100%;*/
+	/*}*/
+	/*.mainViewArea .bottomPanelA{*/
+		/*width: 100%;*/
+	/*}*/
+	/*.topNavigation .topNavlistModule>li {*/
+	    /*width: 14.2%;*/
+	    /*max-width: 142px;*/
+	/*}*/
+/*}*/
+/*@media only screen and (max-width: 960px) {*/
+	/*.mainViewArea .bottomPanelA .navigationGroup{*/
+		/*width: 360px;*/
+	/*}*/
+	/*.mainViewArea .bottomPanelA .navigationGroup a {*/
+		/*width: 180px;*/
+		/*margin-right: 0;*/
+	/*}*/
+	/*.mainViewArea .bottomPanelA .navigationGroup {*/
+		/*left: 10px;*/
+	/*}*/
+	/*.mainViewArea .bottomPanelA .shareGroup {*/
+		/*right: 10px;*/
+	/*}*/
+	/*.mainViewArea .bottomPanelA .copyright {*/
+		/*right: 10px;*/
+	/*}*/
 
-@media only screen and (max-width: 900px) {
-	.mainViewArea .contentBlock .contentMiddleBlock a {
-		width: 340px;
-		height: 235px;
-	}
-	.mainViewArea .contentBlock .contentMiddleBlock a img{
-		width: 340px;
-		height: 235px;
-	}
-}
-@media only screen and (max-width: 784px) {
-	 html,body {
-	    width: auto;
-	    height: auto;
-	}
-	.mainViewArea .centerBlock{
-  		width: 100%;	
-  	}
-  	.mainViewArea .bottomPanelA{
-		width: 100%;
-	}
-	.mainViewArea{
-		display: none;
-	}
-	.phoneViewArea{
-		display: block;
-	}
-	
-	.topNavigation .topNavlistModule li{
-		width: 100%;
-	}
-	
-	.phoneViewArea .logoGraphic {
-		background: url("../images/phone/index_logoGraphic.png");
-	    display: block;
-	    height: 171px;
-	    left: 50%;
-	    margin-left: -105px;
-	    margin-top: -157px;
-	    overflow: hidden;
-	    position: absolute;
-	    top: 50%;
-	    width: 210px;
-	}
-	.phoneViewArea .logoText {
-	    background: url("../images/phone/index_logoText.png");
-	    height: 35px;
-	    left: 50%;
-	    margin-left: -113px;
-	    margin-top: 30px;
-	    position: absolute;
-	    top: 50%;
-	    width: 227px;
-	}
-	
-	
-}
+/*}*/
+
+/*@media only screen and (max-width: 900px) {*/
+	/*.mainViewArea .contentBlock .contentMiddleBlock a {*/
+		/*width: 340px;*/
+		/*height: 235px;*/
+	/*}*/
+	/*.mainViewArea .contentBlock .contentMiddleBlock a img{*/
+		/*width: 340px;*/
+		/*height: 235px;*/
+	/*}*/
+/*}*/
+/*@media only screen and (max-width: 784px) {*/
+	 /*html,body {*/
+	    /*width: auto;*/
+	    /*height: auto;*/
+	/*}*/
+	/*.mainViewArea .centerBlock{*/
+  		/*width: 100%;*/
+  	/*}*/
+  	/*.mainViewArea .bottomPanelA{*/
+		/*width: 100%;*/
+	/*}*/
+	/*.mainViewArea{*/
+		/*display: none;*/
+	/*}*/
+	/*.phoneViewArea{*/
+		/*display: block;*/
+	/*}*/
+
+	/*.topNavigation .topNavlistModule li{*/
+		/*width: 100%;*/
+	/*}*/
+
+	/*.phoneViewArea .logoGraphic {*/
+		/*background: url("../images/phone/index_logoGraphic.png");*/
+	    /*display: block;*/
+	    /*height: 171px;*/
+	    /*left: 50%;*/
+	    /*margin-left: -105px;*/
+	    /*margin-top: -157px;*/
+	    /*overflow: hidden;*/
+	    /*position: absolute;*/
+	    /*top: 50%;*/
+	    /*width: 210px;*/
+	/*}*/
+	/*.phoneViewArea .logoText {*/
+	    /*background: url("../images/phone/index_logoText.png");*/
+	    /*height: 35px;*/
+	    /*left: 50%;*/
+	    /*margin-left: -113px;*/
+	    /*margin-top: 30px;*/
+	    /*position: absolute;*/
+	    /*top: 50%;*/
+	    /*width: 227px;*/
+	/*}*/
+
+
+/*}*/
