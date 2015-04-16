@@ -201,7 +201,7 @@ $(function(){
 	//--
 	function windowResizeHandler(){
 		AD_windowResizeHandler();
-		screenHeightPlaceholderHandler();	
+		screenHeightPlaceholderHandler();
 	}
 	windowEl.resize(function(){
     	clearTimeout(windowResizeTimeID);

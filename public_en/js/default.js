@@ -416,7 +416,7 @@ var AppointmentModule = function( type ){
 		blockEl.css({"left": (windEl.width()-blockEl.width())/2,
 		"top":(windEl.height()-blockEl.height())/2});
 	};
-	windEl.resize(updateView);
+	//windEl.resize(updateView);
 	formEl.submit(function(){
 		var result = true;
 		for(var i=0; i < 7;i++){
@@ -468,7 +468,7 @@ var ToApp = function(){
 		popWinEl.hide();
 		blockEl.hide();
 	});
-	windEl.resize(updateView);
+	//windEl.resize(updateView);
 };
 
 
@@ -817,35 +817,35 @@ $(function(){
 	}
 	
 	//--
-	function windowResizeHandler(){
-		if( windowEl.width() < phoneViewWidth - winScrollWidth){
-			if(topNavlistModuleEl.parent()[0] == norNavBlockEl[0]){
-				phoneViewMenuEl.append(topNavlistModuleEl);
-			}
-		}else{	
-			if( topLogoEl.is(":hidden") ){
-				topLogoEl.css("display","");
-				phoneSearchBtnEl.css("display","");
-				phoneShoppingBtnEl.css("display","");
-				searchBlockEl.css("display","");
-			}
-			sub01Els.css("display","");
-			sub02Els.css("display","");
-			if(topNavlistModuleEl.parent()[0] != norNavBlockEl[0]){
-				norNavBlockEl.append( topNavlistModuleEl );
-			}
-		}
-		
-		if( screenHeightPlaceholderHandler){
-			screenHeightPlaceholderHandler();
-		}
-		TS_updateSize();
-	}
-	windowEl.resize(function(){
-    	clearTimeout(windowResizeTimeID);
-    	windowResizeTimeID = setTimeout( windowResizeHandler,100);
-    });
-    windowResizeHandler();
+	//function windowResizeHandler(){
+	//	if( windowEl.width() < phoneViewWidth - winScrollWidth){
+	//		if(topNavlistModuleEl.parent()[0] == norNavBlockEl[0]){
+	//			phoneViewMenuEl.append(topNavlistModuleEl);
+	//		}
+	//	}else{
+	//		if( topLogoEl.is(":hidden") ){
+	//			topLogoEl.css("display","");
+	//			phoneSearchBtnEl.css("display","");
+	//			phoneShoppingBtnEl.css("display","");
+	//			searchBlockEl.css("display","");
+	//		}
+	//		sub01Els.css("display","");
+	//		sub02Els.css("display","");
+	//		if(topNavlistModuleEl.parent()[0] != norNavBlockEl[0]){
+	//			norNavBlockEl.append( topNavlistModuleEl );
+	//		}
+	//	}
+	//
+	//	if( screenHeightPlaceholderHandler){
+	//		screenHeightPlaceholderHandler();
+	//	}
+	//	TS_updateSize();
+	//}
+	//windowEl.resize(function(){
+    	//clearTimeout(windowResizeTimeID);
+    	//windowResizeTimeID = setTimeout( windowResizeHandler,100);
+    //});
+    //windowResizeHandler();
     
     //--
     //添加购物车
